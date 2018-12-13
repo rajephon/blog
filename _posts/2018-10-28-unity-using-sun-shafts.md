@@ -2,10 +2,7 @@
 title: "Unity - 선 샤프트(Sun shafts) / 볼류메트릭 라이팅(Volumetric Lighting) 효과 이용하기"
 date: 2018-10-28 17:42:30 +0900
 categories: Unity
-tags: [Unity, VolumetricFog, VolumetricLighting]
-layout: post
-comments: true
-pinned: true
+tags: Unity StandardAssets VolumetricFog VolumetricLighting
 ---
 ![VolumetricLighting]({{ "/assets/images/Unity-SunShafts/7.png" | absolute_url }}) 
 ## Intro
@@ -13,7 +10,7 @@ pinned: true
 유니티에서는 해당 효과를 `선 샤프트(Sun Shafts)`라 부르고 있고, 유니티 테크놀로지 공식 에셋을 통해 사용할 수 있다.
 
 ## Sun Shafts 설치 및 활용
-![Effects5.5_0]({{ "/assets/images/Unity-SunShafts/0.jpg" | absolute_url }})  
+![Effects5.5_0]({{ site.url }}/assets/images/Unity-SunShafts/0.jpg)  
 원래는 [스탠다드 에셋(Standard Assets)](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351)의 포함된 `ImageEffects`의 요소로 존재했었지만 지금은 `ImageEffects`가 [Legacy Image Effects](https://assetstore.unity.com/packages/essentials/legacy-image-effects-83913)라는 이름으로 별도의 에셋으로 분리되었다. 따라서 `Sun Shafts`를 이용하려면 에셋스토어에서 `Legacy Image Effects`를 내려받으면 된다. 이름에 접두로 `Legacy`가 붙은 것과 같이 이전에 주력으로 사용되었지만, 유니티에서는 5.5버전 이후부터 `Legacy Image Effects`가 아닌 `Post Processing Stack`를 이용하길 추천하고 있다. 이에 대한 설명은 이후에 더 설명하겠다.
 
 `Legacy Image Effects`를 정상적으로 임포트에 성공했으면, 선 샤프트 기능을 적용할 카메라를 선택한 다음 메뉴 바의 `Component` - `Image Effects` - `Rendering` - `Sun Shafts`를 선택한다. 그러면 카메라 오브젝트의 `Inspector` 창에 `SunShafts (Script)`가 추가된 것을 확인할 수 있다.
