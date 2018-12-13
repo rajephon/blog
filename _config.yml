@@ -1,0 +1,72 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: "rajephon's blog"
+email: "rajephon@gmail.com"
+description: "게임과 영화를 좋아하는 개발자의 블로그."
+url: "https://rajephon.github.io" # the base hostname & protocol for your site
+# baseurl: "/blog"
+keywords: ["blog", "jekyll"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Seoul
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /:year/:month/:day/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: rajephon
+  avatar: profile.png
+  job: "S/W Engineer"
+  bio: "게임과 영화를 좋아하는 개발자"
+  email:
+  disqus-shortname: rajephon
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-98733909-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: rajephon #username
+  gitlab: #username
+  stackoverflow: 5286905/rajephon #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: chanwoo-noh-799b79141 #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
+  reddit: #username
+  telegram: #username
