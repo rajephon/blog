@@ -1,6 +1,11 @@
 # skills section data
 
-label: Ability
+# label: Ability
+# id : cs
+# aspects: Motivation, GitHub, Java, HTML/CSS, Docker, Python
+# percentage: 100, 65, 70, 60, 60, 55
+
+label: Interest
 id : cs
-aspects: Motivation, GitHub, Java, HTML/CSS, Docker, Python
-percentage: 100, 65, 70, 60, 60, 55
+aspects: Movie, Overwatch, Beer, Unity3D, Akka, C++
+percentage: 75, 90, 70, 60, 97, 80
