@@ -14,10 +14,10 @@ pinned: true
 먼저 봇을 동작하게 할 토큰을 생성해보자.  
 슬랙 상단에서 Workspace 이름을 클릭, Administaration-Manage Apps-Custom Integrations-Bots 페이지로 들어간다.  
 **Add Configuration**을 눌러 생성한다.  
-![Add Configuration]({{ "/assets/images/Slack-Weater-Bot/00.AddConfiguration.png" | absolute_url }})  
+![Add Configuration]({{ site.url }}/assets/images/Slack-Weater-Bot/00.AddConfiguration.png)  
 
 그리고, 여기서 API Token을 얻을 수 있다.
-![API Token]({{ "/assets/images/Slack-Weater-Bot/01.APIToken.png" | absolute_url }})  
+![API Token]({{ site.url }}/assets/images/Slack-Weater-Bot/01.APIToken.png)  
 
 
 ## 01. 코드 작성
@@ -152,6 +152,6 @@ var scheduleJob = schedule.scheduleJob(scheduleRule, function(){
 
 Heroku 호스팅 방법은 [devcenter.heroku.com](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)에 매우 친절하게 적혀져 있으므로 참고바란다. 정말 자세하게 적어둬서 누구나 손쉽게 따라할 수 있을 것이다.  
 
-![Slack Weater Bot]({{ "/assets/images/Slack-Weater-Bot/02.SlackWeaterBot.png" | absolute_url }})  
+![Slack Weater Bot]({{ site.url }}/assets/images/Slack-Weater-Bot/02.SlackWeaterBot.png)  
 
 100줄도 안되는 코드로 금방 봇을 만들 수 있었다.

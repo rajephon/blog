@@ -4,7 +4,7 @@ date: 2018-10-28 17:42:30 +0900
 categories: Unity
 tags: Unity StandardAssets VolumetricFog VolumetricLighting
 ---
-![VolumetricLighting]({{ "/assets/images/Unity-SunShafts/7.png" | absolute_url }}) 
+![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/7.png) 
 ## Intro
 영화, 뮤직비디오, 게임 등 영상 매체를 보다 보면 창문이나 사물 틈으로 멋들어지게 빛이 산란하는 모습을 볼 수 있다. 이러한 빛의 모습을 한국어로는 [틈새빛살](https://ko.wikipedia.org/wiki/%ED%8B%88%EC%83%88%EB%B9%9B%EC%82%B4), 영어로는 [Crepuscular rays](https://en.wikipedia.org/wiki/Crepuscular_rays), `sunbeams`, `sun rays`, `god rays` 등으로 불린다.  
 유니티에서는 해당 효과를 `선 샤프트(Sun Shafts)`라 부르고 있고, 유니티 테크놀로지 공식 에셋을 통해 사용할 수 있다.
@@ -15,7 +15,7 @@ tags: Unity StandardAssets VolumetricFog VolumetricLighting
 
 `Legacy Image Effects`를 정상적으로 임포트에 성공했으면, 선 샤프트 기능을 적용할 카메라를 선택한 다음 메뉴 바의 `Component` - `Image Effects` - `Rendering` - `Sun Shafts`를 선택한다. 그러면 카메라 오브젝트의 `Inspector` 창에 `SunShafts (Script)`가 추가된 것을 확인할 수 있다.
 
-![Effects5.5_1]({{ "/assets/images/Unity-SunShafts/1.png" | absolute_url }})  
+![Effects5.5_1]({{ site.url }}/assets/images/Unity-SunShafts/1.png)  
 
 여러 가지 수치를 조정할 수 있다. 간략히 설명하면 다음과 같다.
 - `Resolution`: `Low`, `Normal`, `High` 중에서 고를 수 있다. 선 샤프트의 정밀도, 세밀도와 같이 생각하면 된다.
@@ -25,13 +25,13 @@ tags: Unity StandardAssets VolumetricFog VolumetricLighting
 ### Sun Shafts 적용 결과
 
 #### `Resolution`을 `Low`로 한 경우
-![Effects5.5_1]({{ "/assets/images/Unity-SunShafts/2.png" | absolute_url }}) 
+![Effects5.5_1]({{ site.url }}/assets/images/Unity-SunShafts/2.png) 
 
 #### `Resolution`을 `High`로 한 경우
-![Effects5.5_1]({{ "/assets/images/Unity-SunShafts/3.png" | absolute_url }}) 
+![Effects5.5_1]({{ site.url }}/assets/images/Unity-SunShafts/3.png) 
 
 #### `Shafts color`를 노란색 계열로 한 경우
-![Effects5.5_1]({{ "/assets/images/Unity-SunShafts/4.png" | absolute_url }}) 
+![Effects5.5_1]({{ site.url }}/assets/images/Unity-SunShafts/4.png) 
 
 #### 적용 예
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WNO95izzJKw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -54,7 +54,7 @@ tags: Unity StandardAssets VolumetricFog VolumetricLighting
 5. Scene의 Lighting 설정에 Fog가 켜져 있을 경우 체크 해제한다.  
     (`Window` - `Lighting` - `Settings`를 누를 경우 설정 창이 나타난다. 그곳의 가장 하단 `Other Settings`에 있다.)
 
-![VolumetricLighting]({{ "/assets/images/Unity-SunShafts/5.png" | absolute_url }}) 
+![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/5.png) 
 
 완성되면 이런 형태를 갖출 것이다. 그다음으로 할 일은 광원 위치 배치와 수치를 조정하는 일이다.  
 나는 나무 사이로 빛이 산란하는 효과를 만들기 위해 상단의 스크린샷과 같이 캐릭터의 옆에서 카메라가 바라보고 있고, 나무 오브젝트로 이루어진 숲 뒤쪽에서 캐릭터(카메라) 방향으로 광원을 만들었다.
@@ -64,11 +64,11 @@ tags: Unity StandardAssets VolumetricFog VolumetricLighting
 - `Size`: `Near Clip`과 `Far Clip Max`를 설정할 경우, 위의 스크린샷 처럼 범위가 그려질 것이다(노락색 선으로 이루어져 있다). 이 범위와 `AreaLight`에서 설정할 범위가 겹치는 부분에서 빛의 산란이 연산된다.
 - `Fog Density`: 이름 그대로 Fog의 밀도를 설정한다. 글로벌 밀도부터 노이즈까지 다양하게 설정할 수 있는데, 수치를 시작부터 높게 잡기보다 0부터 조금씩 높여가며 자신이 원하는 느낌을 찾는 것을 추천한다.
 
-![VolumetricLighting]({{ "/assets/images/Unity-SunShafts/6.png" | absolute_url }}) 
+![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/6.png) 
 ### AreaLight
 마찬가지로 여기서는 산란할 빛의 범위와 강도, 그리고 색상을 설정할 수 있다. 앞서 `VolumetricFog`에서 설명한 것과 같이 범위와 `Directional Light`의 방향을 잡아주면 빛이 흩날리는 효과를 낼 수 있다. 하단의 `Fog Light`에서도 조정할 수 있다.
 
-![VolumetricLighting]({{ "/assets/images/Unity-SunShafts/7.png" | absolute_url }}) 
+![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/7.png) 
 
 ## Outro
 만약 Windows PC만 지원해도 상관없다면 에셋스토어에서 [Aura Volumetric Lighting](https://assetstore.unity.com/packages/vfx/shaders/aura-volumetric-lighting-111664)를 받아 이용해보는 것도 나쁘지 않다. 무료임에도 불구하고 꽤 멋들어진 빛의 산란을 만들어준다. 다만, DirectX를 활용하여 동작하는 관계로 MacOS나 모바일에서 동작하지 않는다. 또한 처음 임포트를 할 때 컴퓨터 사양에 따라서 20분-1시간 정도 걸릴 수 있으니 차분히 기다리길 추천한다.

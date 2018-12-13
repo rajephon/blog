@@ -7,7 +7,7 @@ layout: post
 comments: true
 pinned: true
 ---
-![OpenWrt]({{ "/assets/images/OpenWrt-00/00.jpg" | absolute_url }})  
+![OpenWrt]({{ site.url }}/assets/images/OpenWrt-00/00.jpg)  
 <sub>출처 [flickr:Gareth Halfacree](https://www.flickr.com/photos/120586634@N05/15614095254)</sub>
 
 ## Intro

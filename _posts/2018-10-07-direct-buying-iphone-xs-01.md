@@ -55,7 +55,7 @@ The Unlocked Mobiles Team
 
 수요일 오후, DHL에서 운송장 번호와 배송 추적을 할 수 있는 링크를 받았다.
 
-![dhl-00]({{ "/assets/images/Direct-buying-iphone-xs-01/00.png" | absolute_url }})  
+![dhl-00]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/00.png)  
 
 ----
 
@@ -66,18 +66,18 @@ The Unlocked Mobiles Team
 
 금요일 아침, 통관이 문제없이 빨리 됐으면 하는 바램으로 한국에 도착했다는 알림이 오자마자(DHL에 문자 트래킹 알림 서비스를 해준다 해서 등록했더니, 변동이 있을 때 마다 알림이 울렸다), 관세청 사이트에서 접수된게 있는지 확인해봤다.
 
-![unipass00]({{ "/assets/images/Direct-buying-iphone-xs-01/01.png" | absolute_url }})  
+![unipass00]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/01.png)  
 
 통관 상태 조회는 [국가관세종합정보망 서비스](https://unipass.customs.go.kr/csp/index.do?method=viewImpCargoProgInfoEach)에서 `화물진행정보` - `M B/L - H B/L` 선택 후 `H B/L` 칸에 송장번호를 입력하면 조회가 가능하다. 
 
-![unipass01]({{ "/assets/images/Direct-buying-iphone-xs-01/02.png" | absolute_url }})  
+![unipass01]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/02.png)  
 
 마침 '수입신고'가 나타나있었다. 수입신고 옆 신고번호를 클릭하면 다음과 같은 창이 나오며, 관세로 책정된 금액을 조회할 수 있다.
 여기서 계속 더 기다리고 있으면 관세를 납부하라는 연락이 올 것이다. 나는 미리 조회를 해봐서 납부해야 할 금액이 이미 고지되어 있다는 것을 알고있으므로 기다릴 필요 없이 먼저 납부처리를 끝냈다.
 
 납부는 [카드로택스](https://www.cardrotax.kr/index.giro)에서 할 수 있다. 이름과 같이 카드로도 납부할 수 있는데, 수수료가 약 1% 정도 붙는다. 큰 금액은 아니지만 바로 계좌이체로 수수료 없이 처리할 수 있으므로 나는 계좌이체를 선택했다.
 
-![cardrotax00]({{ "/assets/images/Direct-buying-iphone-xs-01/03.png" | absolute_url }})  
+![cardrotax00]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/03.png)  
 
 관세 납부 확인을 받았다. 이제 기다리는 일만 남았다. 
 
@@ -85,21 +85,21 @@ The Unlocked Mobiles Team
 
 금요일 오후, 도착했다.!
 
-![iphonexs00]({{ "/assets/images/Direct-buying-iphone-xs-01/04.jpg" | absolute_url }})  
-![iphonexs01]({{ "/assets/images/Direct-buying-iphone-xs-01/05.jpg" | absolute_url }})
+![iphonexs00]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/04.jpg)  
+![iphonexs01]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/05.jpg)
 
 온라인에 알려진 바와 같이 라이트닝 형태의 이어팟이 들어있고, 3.5파이 - 라이트닝 변환 젠더는 포함되어있지 않다.
 
-![iphonexs02]({{ "/assets/images/Direct-buying-iphone-xs-01/06.jpg" | absolute_url }})  
+![iphonexs02]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/06.jpg)  
 
 영국 직구라 CE와 WEEE 지침 마크가 그려져있다. 기존에 사용하던 핸드폰 카메라가 좋지 못해서 아이폰 전면 사진을 제대로 찍지 못했다. 후면 골드 색상은 은은한 광택 빛의 느낌이였다.
 
-![iphonexs03]({{ "/assets/images/Direct-buying-iphone-xs-01/07.jpg" | absolute_url }})![iphonexs04]({{ "/assets/images/Direct-buying-iphone-xs-01/08.jpg" | absolute_url }})
+![iphonexs03]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/07.jpg)![iphonexs04]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/08.jpg)
 
 마찬가지로 USB어댑터 또한 영국의 G타입이라 기존에 사용하던 USB충전기를 사용하거나 여행용 멀티 플러그를 사용해야 할 것 같다.
 
-![iphonexs05]({{ "/assets/images/Direct-buying-iphone-xs-01/09.jpg" | absolute_url }})  
-![iphonexs06]({{ "/assets/images/Direct-buying-iphone-xs-01/10.jpg" | absolute_url }})  
+![iphonexs05]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/09.jpg)  
+![iphonexs06]({{ site.url }}/assets/images/Direct-buying-iphone-xs-01/10.jpg)  
 
 케이스와 보호필름은 아이폰 X와 호환된다. 기존에 사용하던 아이폰6 전체백업을 한 다음 데이터를 옮겼다. 유심도 옮겨서 모든 동기화를 마친 다음 바로 케이스와 보호필름을 구입했다.  
 보호필름을 직원분이 30분 가까이에 걸쳐서 붙여주셨는데 매장 나오자마자 기포가 생기더니 모서리쪽에 길쭉하게 늘어났다ㅠㅠ

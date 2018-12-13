@@ -33,96 +33,96 @@ pinned: true
 회사에 출근하며 이런저런 여행준비를 하다 보니 금방 출발일이 다가왔다.
 
 ## 01. 인천공항
-![인천공항01]({{ "/assets/images/Brisbane-travel-00/IMG_8966.jpg" | absolute_url }})  
+![인천공항01]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8966.jpg)  
 
 항공기 출발은 오후 7시 40분쯤이었다. 출발 당일 딱히 할 일도 없고 그래서 일찍 출발해서 공항 구경을 했다. 인천공항은 여전히 넓었다. 끝에서 끝 가지 거의 1km는 되는 것 같았다.
 
-![인천공항투썸]({{ "/assets/images/Brisbane-travel-00/IMG_8968.jpg" | absolute_url }})  
+![인천공항투썸]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8968.jpg)  
 
 마침 올림픽 시즌이라 이런저런 행사를 하고 있었다. 잠깐 구경하고 돌아다니면서 둘러보다가 투썸플레이스에서 체크인 시작시각까지 쉬면서 커피를 마셨다. 5시부터 체크인이라고 하였다.
 
-![체크인]({{ "/assets/images/Brisbane-travel-00/IMG_8972.jpg" | absolute_url }})  
+![체크인]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8972.jpg)  
 체크인은 온라인으로 미리 체크인을 한 사람과 안 한 사람 줄이 따로 있어서 미리 해둘 경우 훨씬 빠르게 끝낼 수 있다. 여권과 항공권 결제를 한 카드를 가지고 가면 바로 끝난다.  
 에바항공이 산리오와 협력하고 있어서 켓에도 헬로키티를 비롯한 각종 캐릭터가 그려져 있었다. 타이베이로 가서 브리즈번행으로 환승할 예정이므로, 티켓을 두 장 받았다. 타이베이에서 짐 내릴지, 바로 브리즈번으로 보낼 지 물어봐서 브리즈번으로 바로 보내달라 부탁했다.
 
 출입국절차는 2018평창동계올림픽 관계로 강화되어 있었다. 검사를 철저하게 받았다.
 
-![평창-네임태그]({{ "/assets/images/Brisbane-travel-00/IMG_8975.jpg" | absolute_url }})  
+![평창-네임태그]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8975.jpg)  
 면세점이 있는 쪽에 간이부스로 올림픽 기념 굿즈를 팔고 있었다. 캐리어에 이름표가 없어서 평창 네임태그 구입. 귀엽다 :)
 
-![문화공연]({{ "/assets/images/Brisbane-travel-00/IMG_8976.jpg" | absolute_url }})  
+![문화공연]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8976.jpg)  
 여기서도 문화공연을 하고 있었다.
 
-![인천공항충전포트]({{ "/assets/images/Brisbane-travel-00/IMG_8981.jpg" | absolute_url }})  
+![인천공항충전포트]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8981.jpg)  
 의자가 있는 곳곳에 이런 콘센트와 USB 충전 포트가 있었다.
 무선충전을 지원하는 핸드폰을 위해 무선충전도 가능했다.
 
-![딸기스무디]({{ "/assets/images/Brisbane-travel-00/IMG_8983.jpg" | absolute_url }})  
+![딸기스무디]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8983.jpg)  
 면세점에서 선물도 사고 딸기 스무디도 사 마시며 구경하다 보니 탑승할 시간이 다가와 내 항공편의 게이트 쪽으로 이동.
 
-![에바에어 항공기]({{ "/assets/images/Brisbane-travel-00/IMG_8991.jpg" | absolute_url }})  
+![에바에어 항공기]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8991.jpg)  
 항공기에도 헬로키티가 그려져 있었다.
 
-![타이베이행 기내]({{ "/assets/images/Brisbane-travel-00/IMG_8996.jpg" | absolute_url }})  
+![타이베이행 기내]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8996.jpg)  
 내부는 꽤 깔끔하고 좋았다. USB 충전 포트도 있었지만, 깜빡하고 USB 케이블을 가방에 넣어둬서 이용하지는 못했다.
 
-![배드바츠마루 쿠션]({{ "/assets/images/Brisbane-travel-00/IMG_8999.jpg" | absolute_url }})  
+![배드바츠마루 쿠션]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_8999.jpg)  
 에바항공의 대표 캐릭터 [배드바츠마루](http://hellokitty.wikia.com/wiki/Badtz-Maru)가 그려진 쿠션.
 
-![기내식01]({{ "/assets/images/Brisbane-travel-00/IMG_9001.jpg" | absolute_url }})  
-![기내식02]({{ "/assets/images/Brisbane-travel-00/IMG_9002.jpg" | absolute_url }})  
+![기내식01]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9001.jpg)  
+![기내식02]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9002.jpg)  
 항공기가 이륙하고 잠시 후 기내식을 준다.
 맛은 그냥 보통. 냉동식품먹는 느낌? 특히 위 사진의 채소 무침 같은 반찬은 너무 신맛이 강해 내 입맛에는 맞지 않았다. 그래도 먹을만했다. 내 옆자리에 앉으신 분은 온라인 체크인을 할 때 기내식 업그레이드 신청했는지 더 좋아 보이는 기내식을 받았다. 궁금하다면 한 번쯤 해보는 것도 나쁘지 않다.
 
 기내식을 먹고 영화를 봤다. 자막과 언어 서비스는 중국어, 일본어, 영어만 존재하며 한국어는 존재하지 않는다. 마침 한국영화 '택시운전사'가 있어서 그것을 봤다. 좌석에 비치된 이어폰은 깔끔하게 포장되어있었지만, 캡에 먼지가 많이 붙어있는 것이 생산부터 그런 것인지 아니면 재포장을 한 것인지는 모르겠지만 그냥 적당히 털어내고 썼다.
 
-![기내식02]({{ "/assets/images/Brisbane-travel-00/IMG_9006.jpg" | absolute_url }})  
+![기내식02]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9006.jpg)  
 타이베이 도착. 날개 너머로 도시의 야경을 볼 수 있었다.
 
-![타이페이공항01]({{ "/assets/images/Brisbane-travel-00/IMG_9007.jpg" | absolute_url }})  
+![타이페이공항01]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9007.jpg)  
 공항에서 내린 다음, 내가 환승해야 하는 항공편의 게이트로 가기 위해 스카이트레인을 탑승했다. 
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/5ZxekJ1YPhQ" frameborder="0" allowfullscreen></iframe>
 
 사람이 너무 많아 손잡이가 부족해서 천장을 붙잡았다. 막 항공기에서 내리자마자 이동하다 보니 정신없었다.
 
-![타이페이공항02]({{ "/assets/images/Brisbane-travel-00/IMG_9012.jpg" | absolute_url }})  
+![타이페이공항02]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9012.jpg)  
 여기도 기둥에 인천공항과는 또 다른 느낌의 충전 포트가 있었다. 또한, 공항 구석구석에 무료 와이파이가 잘 터져 심심하지는 않았다.
 
-![타이페이공항03]({{ "/assets/images/Brisbane-travel-00/IMG_9010.png" | absolute_url }})  
+![타이페이공항03]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9010.png)  
 에어플레인 모드를 해제하고 자동로밍이 이루어지니 바로 외교부의 해외 여행 안내와 통신사의 로밍 안내 문자가 도착했다. 그리고 데이터 수신도 이루어지는지 푸시메세지가 도착해서 황급히 모바일 데이터 사용을 해제했다.
 
 환승 대기는 조금 지루하지만, 인터넷으로 웹서핑을 하다 보니 시간이 금방 지나갔다.
 
-![브리즈번행01]({{ "/assets/images/Brisbane-travel-00/IMG_9014.jpg" | absolute_url }})  
+![브리즈번행01]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9014.jpg)  
 그리고 브리즈번행 비행기에 탑승했다. 이번에는 우측 날개 뒤 창가 좌석이다. 더욱 긴 비행시간인 만큼 화장실을 가거나 할 때 불편함 없도록 복도쪽에 앉고 싶었지만, 늦게 좌석선택을 하는 바람에 창가 쪽밖에 남질 않았었다.
 
-![브리즈번행02]({{ "/assets/images/Brisbane-travel-00/IMG_9018.jpg" | absolute_url }})  
+![브리즈번행02]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9018.jpg)  
 런웨이로 가는 항공기. 사실 장거리 비행이 처음이라 살짝 긴장했다.
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/7rkNdZiJ4M0" frameborder="0" allowfullscreen></iframe>
 
 카메라에는 담지 못했지만, 도심 상공에서 구름 위를 날아갈 때 구름이 백열등의 색상으로 빛나는 모습은 꽤 장관이었다. 엔진 뒤쪽에서 가장 가까운 좌석이라 소음과 진동이 살짝 크게 느껴졌다.
 
-![브리즈번행02]({{ "/assets/images/Brisbane-travel-00/IMG_9026.jpg" | absolute_url }})  
-![브리즈번행03]({{ "/assets/images/Brisbane-travel-00/IMG_9027.jpg" | absolute_url }})  
+![브리즈번행02]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9026.jpg)  
+![브리즈번행03]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9027.jpg)  
 
 기내식을 고를 수 있게 메뉴가 적힌 종이를 나눠준다. 먼저 SKY GOURMET의 치킨과 파스타 중, 파스타를 요청했다. 내 주변에 전부 대만분들이 앉아있어 자꾸 승무원이 중국어로 물어봤었다. 영어로 대답하면 그때 영어로 다시 대답해주셨다.
 
-![브리즈번행04]({{ "/assets/images/Brisbane-travel-00/IMG_9030.jpg" | absolute_url }})  
+![브리즈번행04]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9030.jpg)  
 
 식기는 금속커틀러리였고, 맛은 전체적으로 먹을 만했다. 파스타는 좋았지만 같이 나온 닭고기는 별로였다. 빵과 버터는 맛있었고, 과일은 예상했던 것보다 신선했다. 가장 맛있었던 것은 오른쪽의 초코 브라우니다. 부드럽고 커피랑 잘 어울렸다.
 
-![브리즈번행05]({{ "/assets/images/Brisbane-travel-00/IMG_9031.jpg" | absolute_url }})  
+![브리즈번행05]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9031.jpg)  
 
 이번에도 영화를 뭐 볼까 뒤적뒤적하다가 '토르-라그나로크'를 선택했다. 한국어 자막이 없어 내용 이해가 많이 어려웠다. 
 
-![브리즈번행06]({{ "/assets/images/Brisbane-travel-00/IMG_9033.jpg" | absolute_url }})  
+![브리즈번행06]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9033.jpg)  
 
 한숨 자고 일어나서 먹은 다음 기내식은 이전 것보다는 훨씬 맛있었다.
 크루아상도 따듯했고, 베이컨도 오믈렛도 나름 만족스러웠다.
 
-![브리즈번행07]({{ "/assets/images/Brisbane-travel-00/IMG_9039.jpg" | absolute_url }})  
+![브리즈번행07]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9039.jpg)  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OvwIel_odJ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -134,7 +134,7 @@ pinned: true
 
 그리고 호주는 정말 더웠다. 나는 당시 한국에서 입던 옷 상태 그대로(니트에 긴바지로 완전 겨울 패션)여서 혼자 다른 세상의 패션이었다. 공항 화장실에서 옷을 갈아입었다.
 
-![OPTUS 유심]({{ "/assets/images/Brisbane-travel-00/IMG_9040.jpg" | absolute_url }})  
+![OPTUS 유심]({{ site.url }}/assets/images/Brisbane-travel-00/IMG_9040.jpg)  
 <sub><sup>*사진 찍는 것을 잊어 한국에 돌아와서 찍었다.*</sup></sub>
 
 공항에 있는 [OPTUS](https://www.optus.com.au/)에서 선불 유심을 구입했다. $10에 15GB 플랜으로 매우 저렴했다. 포켓와이파이나 데이터 로밍이었으면 하루에 만원 가까이 해서(찾아볼 당시 가격이 포켓와이파이 8,800원/일, 데이터로밍 11,000원/일 정도 했다) 여기서 구매하는 선불유심이 훨씬 저렴하다. 구매는 매우 간단했다. 플랜을 고른 후 여권으로 간단한 신분 확인을 하고 결제하면 끝이다. 그리고 핸드폰을 주면 그쪽에서 알아서 유심 교체를 하고 번호를 알려준다. 기존에 사용하던 유심은 잃어버리지 않도록 구매한 유심 패키지에 붙여서 돌려준다. 전원을 켜고 잠시 기다리면 활성화 문자가 날아온다. 그것을 타고 들어가서 인증을 끝내면 바로 사용할 수 있다. 또 신기하게도 OPTUS 판매 부스 바로 옆에는 다른 통신사가 자판기를 통해 유심을 자판기를 통해 팔고 있었다.

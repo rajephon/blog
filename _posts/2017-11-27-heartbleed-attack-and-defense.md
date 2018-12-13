@@ -10,12 +10,12 @@ pinned: true
 2014년 대다수 시스템 소프트웨어의 통신보안에 사용되는 OpenSSL에 중대한 취약점이 발견되었다. 이를 발견한 핀란드 보안 업체 ‘코데노미콘’은 이를 대중에게 설명하기 위하여 Heartbleed.com이라는 홈페이지를 개설하고 피를 흘리는 심장과 함께 이 취약점의 이름을 하트블리드(Heartbleed)라고 명명하였다. 이 취약점이 이런 이름으로 칭해지게 된 계기와 취약점 분석, 그리고 방어 방법에 대한 설명을 담았다.
 
 # 2. 공격 원리
-![Heartbleed-Diagram-Clean]({{ "/assets/images/heartbleed-attack-and-defense/Heartbleed-Diagram-Clean.jpg" | absolute_url }})  
+![Heartbleed-Diagram-Clean]({{ site.url }}/assets/images/heartbleed-attack-and-defense/Heartbleed-Diagram-Clean.jpg)  
 (그림 1) 정상적인 하트비트 메시지 교환 [출처 : [forumsys.com](http://forumsys.com)]
 
 OpenSSL 1.0.1 버전부터 하트비트(Heartbeat)라는 이름의 확장 모듈이 추가되었는데, 이는 TLS(Transport Layer Security) / DTLS(Datagram Transport Layer Security)  프로토콜에서 매번 연결을 재협상하지 않아도 통신연결을 유지하게 해주는 확장 규격이다.<sup id="a1">[1](#f1)</sup> 클라이언트가 하트비트를 요청하며 Payload와 해당 Payload의 길이를 보내면 서버 측에서는 하트비트 응답에 내용을 그대로 복사하여 되돌려주며 연결을 확인한다. (그림 1)에서의 상황을 예시로 정리해보면 먼저 클라이언트가 하트비트 요청으로 ‘HELLO’라는 문자의 Payload와 해당 Payload의 길이 5를 전송한다. 서버는 하트비트 요청 사항을 확인하고 하트비트에 클라이언트에서 온 ‘HELLO’라는 Payload와 Payload의 길이 5를 그대로 담아 응답한다. 이러한 일련의 과정을 주기적으로 반복하며 클라이언트와 서버 사이의 연결을 수립한다. 추가적으로 (그림1)의 상황에서 하트비트 교환 중 Payload의 예시로 사용된 메시지 ‘HELLO’는 단순히 이해하기 쉽도록 설명하기 위하여 표현된 임의의 메시지임을 설명한다.
 
-![Heartbleed-Diagram-Corrupt]({{ "/assets/images/heartbleed-attack-and-defense/Heartbleed-Diagram-Corrupt.jpg" | absolute_url }})  
+![Heartbleed-Diagram-Corrupt]({{ site.url }}/assets/images/heartbleed-attack-and-defense/Heartbleed-Diagram-Corrupt.jpg)  
 (그림 2) Payload 길이가 조작된 하트비트 메시지 교환 [출처 : [forumsys.com](http://forumsys.com)]
 
 하트블리드는 여기서 하트비트 요청 메시지에 포함된 Payload와 Payload의 길이 부분 사이의 일치성을 확인하지 않는다는 점에서 발생하는 보안이슈이다. 서버에서 하트비트에 대한 응답을 할 때, 메모리에서 요청으로 들어온 Payload를, 마찬가지로 요청으로 들어온 Payload의 길이 만큼 빼내어 되돌려준다. 여기서 Payload의 길이의 값을 실제 Payload보다 훨씬 크게 잡으면 메모리에서 Payload의 뒤에 적혀 있는 값을 길이 만큼 모두 응답 패킷에 담아 보내버리는 버그가 발생한다.
@@ -170,7 +170,7 @@ hit_hb(s)
 
 다음으로 이 공격 스크립트 코드를 이용하여 테스트를 위한 취약 서버를 타겟으로 실행해보도록 한다. 서버는 앞서 설명한 바와 같이 1.0.1버전의 OpenSSL, 2.4.18 버전의 Apache가 80번, 443번 포트에 각각 HTTP, HTTPS 서비스를 동작시키고 있다.
 
-![screenshot]({{ "/assets/images/heartbleed-attack-and-defense/screenshot.png" | absolute_url }})  
+![screenshot]({{ site.url }}/assets/images/heartbleed-attack-and-defense/screenshot.png)  
 (그림 3) 하트블리드(Heartbleed) 취약점 공격 실습
 
 파이썬 명령을 이용하여 공격 타겟의 IP(192.168.25.23)를 인자로 전달하여 실행한다. 스크립트 코드는 따로 지정해준 포트가 없으므로 HTTPS/SSL 서비스 기본 설정인 443번 포트에 Client Hello 메시지를 전송하여 Handshake를 수행하고 하트블리드 공격 코드 메시지를 전송한다. 이 결과로 (그림3)의 결과 화면과 같이 하트블리드 메시지 응답으로 서버의 메모리 데이터가 누출되어 헥사 덤프로 화면에 표시된다.
@@ -192,7 +192,7 @@ openssl version
 # OpenSSL 1.0.1l-freebsd 15 Jan 2015
 ```
 freebsd-update fetch를 이용하여 바이너리 보안 업데이트 정보를 가져오고, freebsd-update install 명령어로 설치한다. 이후 openssl version 명령어로 OpenSSL의 버전을 확인해보면 업데이트가 진행된 것을 확인 가능하다.
-![screenshot2]({{ "/assets/images/heartbleed-attack-and-defense/screenshot2.png" | absolute_url }})  
+![screenshot2]({{ site.url }}/assets/images/heartbleed-attack-and-defense/screenshot2.png)  
 (그림 4) OpenSSL 업데이트로 하트블리드 공격 실패
 
 업데이트 이후 다시 취약점 공격 스크립트를 이용하여 확인하면 Handshake 과정은 정상적으로 이루어지나 하트비트를 통한 취약점 공격 메시지는 서버 측에서 응답하지 않아 실패하는 것을 확인할 수 있다.

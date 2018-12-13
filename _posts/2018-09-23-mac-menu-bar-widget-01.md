@@ -12,20 +12,20 @@ pinned: true
 > 기존 포스트 [맥용 메뉴 바 앱 개발하기 - 00. 팝오버 생성](https://rajephon.github.io/blog/2018/07/23/mac-menu-bar-widget-00/)와 이어지는 내용입니다.
 > 단순 기술참고만 하려면 상관없으나, 예제 코드 등 내용이 이전 포스트와 이어지므로, 기존 포스트를 먼저 읽는 것을 추천드립니다.
 
-![popover]({{ "/assets/images/MenuBarApp-00/07.png" | absolute_url }})  
+![popover]({{ site.url }}/assets/images/MenuBarApp-00/07.png)  
 
 이전 포스트에서 메뉴 바에 아이콘을 만들고 popover를 띄우는 것 까지 진행했습니다.
 
-![popover]({{ "/assets/images/MenuBarApp-01/00.gif" | absolute_url }})  
+![popover]({{ site.url }}/assets/images/MenuBarApp-01/00.gif)  
 
 우리는 완성 했을 때 다음과 같이 `lsof` 명령어를 활용해 LISTENING 상태로 열려있는 포트 리스트를 화면에 띄우는 앱을 만들 것입니다.
 
 ## UI 요소 추가
-![TextView]({{ "/assets/images/MenuBarApp-01/01.png" | absolute_url }})  
+![TextView]({{ site.url }}/assets/images/MenuBarApp-01/01.png)  
 먼저, 스토리보드에서 `Text View`를 뷰 컨트롤러에 추가합니다. 배치나 디자인은 꼭 똑같이 하지 않아도 됩니다. 본인이 원하는 스타일대로 해보세요. 저는 옛날 창 느낌이 좋아 배경은 검은색, 글자는 녹색으로 했습니다. 참고로 `Text View`를 추가하면, `Scroll View - Clip View - Text View` 구성으로 추가됩니다.
 `Text View`의 배경색, 글자색을 바꾸려면 `Text View`를 선택 후 수정해야 합니다.
 
-![TextView]({{ "/assets/images/MenuBarApp-01/02.png" | absolute_url }})  
+![TextView]({{ site.url }}/assets/images/MenuBarApp-01/02.png)  
 그리고 만든 `TextView`를 코드에서 이용할 수 있도록 아울렛을 연결해봅니다. 이 포스트를 읽는 분들은 다들 할 줄 아실 것이라 생각합니다. 하지만, 아울렛 연결이 익숙치 않은 분들을 위해 아울렛 연결의 다양한 방법 중 한 가지를 기술해두겠습니다.  
 먼저, Main.storyboard를 새 창에 띄웁니다. `Assistant editor`를 사용해도 되고 두 개의 창을 볼 수 있는 본인이 편한 방법대로 하면 됩니다. 그리고 한 쪽에는 `popover view`와 연결된 뷰 컨트롤러의 스위프트 코드를 열어주세요. 저는 `SampleViewController.swift`이기에 이것을 띄웠습니다.  
 다음, `Text View`를 우클릭합니다. `Scroll View`가 아닌 `Text View`가 선택되도록 Outline View<sup><sub>각 Scene의 하위 요소 리스트가 나열된 화면</sub></sup>에서 `Text View`를 찾아 우클릭 합니다. 검은색 창에 여러 리스트가 나타날 것입니다. 그 중에 `New Referencing Outlet`이 있습니다. 우측의 원(O)을 꾹 누른 채 `override func viewDidLoad()` 위의 공백으로 드래그 해주세요. 그리고 나타난 창에 이름을 정해주세요. 저는 명령어의 결과를 표시할 예정이므로 `resultTextView`로 했습니다.
@@ -43,7 +43,7 @@ class SampleViewController: NSViewController {
 }
 ```
 
-![Storyboard UI button]({{ "/assets/images/MenuBarApp-01/03.png" | absolute_url }})  
+![Storyboard UI button]({{ site.url }}/assets/images/MenuBarApp-01/03.png)  
 
 마찬가지로, 누르면 `lsof` 명령어가 수행 될 버튼을 추가해봅시다. 버튼은 직접적인 UI요소를 조작하는 것이 아닌 동작(클릭)의 이벤트에 따라 동작해야 하므로, `actions`를 정의하면 됩니다. 메소드 이름은 `clickedRunButton(_:)`로 정의했습니다.
 
@@ -70,7 +70,7 @@ class SampleViewController: NSViewController {
     }
 ```
 
-![TextView]({{ "/assets/images/MenuBarApp-01/04.png" | absolute_url }})  
+![TextView]({{ site.url }}/assets/images/MenuBarApp-01/04.png)  
 
 버튼을 눌렀을 때 다음과 같이 텍스트 뷰의 문구가 바뀌면 여기까지는 성공입니다.
 
@@ -81,13 +81,13 @@ class SampleViewController: NSViewController {
 
 어플리케이션 구동 시 HelperDaemon을 install하고, 필요할 때 권한을 요청하고 `NSXPCConnection`을 이용해 Helper에서 커맨드를 수행합니다. 이를 위해서는 Helper를 위한 타겟이 필요합니다. Xcode 프로젝트에서 `File - New - Target...`을 눌러 새로운 타겟을 생성합니다. `macOS - Application`의 `Command Line Tool`을 선택해주세요. 프로젝트 이름은 `SamplePrivilegedTaskRunnerHelper`로 했습니다.
 
-![TextView]({{ "/assets/images/MenuBarApp-01/05.png" | absolute_url }})  
+![TextView]({{ site.url }}/assets/images/MenuBarApp-01/05.png)  
 
 여기까지 잘 따라오셨으면, Xcode 프로젝트는 다음과 같은 모습입니다.  
 그리고, 2개의 plist파일을 생성합니다. `SamplePrivilegedTaskRunnerHelper-Info.plist`와 `SamplePrivilegedTaskRunnerHelper-Launchd.plist`입니다.
  `SamplePrivilegedTaskRunnerHelper` 디렉토리를 오른쪽 클릭 - `New File...`을 선택하고, `Resource - Property List`를 선택 후 `Next`를 눌러주세요. 파일 위치는 가능한 한 기본 그대로 해주세요. `SamplePrivilegedTaskRunnerHelper` 디렉토리 일겁니다. 파일 이름은 `SamplePrivilegedTaskRunnerHelper-Info.plist`로 해주세요. `SamplePrivilegedTaskRunnerHelper-Launchd.plist`또한 똑같은 방법으로 생성합니다.  
  
-![Helper-Info.plist]({{ "/assets/images/MenuBarApp-01/06.png" | absolute_url }})  
+![Helper-Info.plist]({{ site.url }}/assets/images/MenuBarApp-01/06.png)  
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -110,7 +110,7 @@ class SampleViewController: NSViewController {
 `-Info.plist`입니다. `CFBundleName`, `CFBundleIdentifier`는 본인이 지정한 Bundle Identifier에 알맞게 수정해주세요.  
 `CFBundleVersion`또한 본인이 임의로 지정합니다. 이후 수정한 버전이 더 높은 숫차를 가지도록만 하면 됩니다.
 
-![Helper-Launchd.plist]({{ "/assets/images/MenuBarApp-01/07.png" | absolute_url }})  
+![Helper-Launchd.plist]({{ site.url }}/assets/images/MenuBarApp-01/07.png)  
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -131,13 +131,13 @@ class SampleViewController: NSViewController {
 `-Launchd.plist`입니다. `Label`과 `MachServices`의 Key값을 Bundle Identifier에 알맞게 수정해주세요.  
 그리고 Boolean 타입의 Key들을 YES로 설정해주세요.
 
-![Helper TARGET Info]({{ "/assets/images/MenuBarApp-01/08.png" | absolute_url }})  
+![Helper TARGET Info]({{ site.url }}/assets/images/MenuBarApp-01/08.png)  
 
 다음으로 좌측 네비게이션에서 프로젝트 선택 - `TARGETS` - `SamplePrivilegedTaskRunnerHelper`를 클릭합니다.
 `Identity`에 `Choose Info.plist File...`버튼을 클릭하고 `SamplePrivilegedTaskRunnerHelper-Info.plist` 파일을 선택합니다.
 
 `Build Settings`에 `Other Linker Flags` 세팅도 해줍니다.
-![SampleProject TARGET Build Settings]({{ "/assets/images/MenuBarApp-01/09.png" | absolute_url }})  
+![SampleProject TARGET Build Settings]({{ site.url }}/assets/images/MenuBarApp-01/09.png)  
 ```text
 -sectcreate
 __TEXT
@@ -154,7 +154,7 @@ __launchd_plist
 
 `TARGETS` - `SampleProject` - `Build Phases`로 들어갑니다.
 모서리에 있는 `+`버튼을 누르고 `New Copy File Phase`를 선택합니다. 그리고 다음와 같이 세팅해주세요.
-![SampleProject TARGET Build Phases]({{ "/assets/images/MenuBarApp-01/10.png" | absolute_url }})  
+![SampleProject TARGET Build Phases]({{ site.url }}/assets/images/MenuBarApp-01/10.png)  
 ```text
 Destination: Wrapper
 Subpath: Contents/Library/LaunchServices
@@ -554,7 +554,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 python ./SMJobBlessUtil.py setreq <메인 타겟 .app 파일> <메인 타겟 Info.plit> <헬퍼-Info.plist>
 ```
 
-![After JobBlessUtil]({{ "/assets/images/MenuBarApp-01/11.png" | absolute_url }})  
+![After JobBlessUtil]({{ site.url }}/assets/images/MenuBarApp-01/11.png)  
 작업이 정상적으로 완료될 경우, 다음과 같이 Info.plist의 `Clients allowed to add and remove tool` Key에 값이 자동적으로 세팅이 되어있습니다.
 
 이제 진짜 마지막입니다.  
@@ -566,13 +566,13 @@ python ./SMJobBlessUtil.py setreq <메인 타겟 .app 파일> <메인 타겟 Inf
 ```
 
 ## 실행
-![Run 01]({{ "/assets/images/MenuBarApp-01/12.png" | absolute_url }})  
+![Run 01]({{ site.url }}/assets/images/MenuBarApp-01/12.png)  
 정상적으로 첫 실행될 경우, 아직 헬퍼가 설치되어있지 않아 `AppDelegate.swift`의 `viewController.checkHelperVersionAndUpdateIfNecessary`에서 `installed`가 `false`로 반환됩니다.  이에따라 `self.viewController.installHelperDaemon()`가 수행되어 헬퍼를 설치하기 위해 다음과 같은 설치 허용 요청 창이 나타납니다.
 
-![Run 02]({{ "/assets/images/MenuBarApp-01/13.png" | absolute_url }})  
+![Run 02]({{ site.url }}/assets/images/MenuBarApp-01/13.png)  
 RUN버튼을 눌러주면, `AppAuthorizationRights.swift`파일의 `shellRightDescription` 스태틱 상수에 설정한 문구가 나타나며 권한을 요청합니다. 
 
-![Run 03]({{ "/assets/images/MenuBarApp-01/14.png" | absolute_url }})  
+![Run 03]({{ site.url }}/assets/images/MenuBarApp-01/14.png)  
 정상적인 패스워드를 입력할 경우, `PrivilegedTaskRunnerHelper`의 `func runCommand(path: String, authData: NSData?, reply: @escaping (String) -> Void)`가 수행되고 결과가 텍스트필드에 나타납니다.  
 원래 `SampleViewController.swift`의 `callHelperWithAuthorization()`에서 `xpcService?.runCommand`를 호출할 때 첫번째 파라미터(`path: "lsof"`)를 명령어로 전달하지만 여러 명령어를 수행하지 않고, 명령어의 아규먼트 전달 편의성을 위해 `PrivilegedTaskRunnerHelper`의 멤버 상수(`commandPath:String`, `commandArguments:[String]`)로 정의하여 사용했습니다.
 

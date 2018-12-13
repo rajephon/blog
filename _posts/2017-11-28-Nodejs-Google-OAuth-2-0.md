@@ -23,7 +23,7 @@ npm install --save body-parser express express-session
 Google OAuth 2.0을 이용하려면 클라이언트 ID를 발급받아야 한다. 발급은 [Google APIs Console](https://console.developers.google.com/apis)에서 받을 수 있다. 프로젝트가 없으면 생성하고, `OAuth 2.0 클라이언트 ID`항목이 비어있다면 `사용자 인증 정보 만들기`-`OAuth 2.0 클라이언트 ID`를선택하여 생성한다. 그리고 별도의 사용 도메인이 있을 경우 생성한 클라이언트 ID 설정화면에서 URI에 도메인을 입력하고, 리디렉션 URI를 세팅한다. 본인은 리디렉션 경로로 `/auth/google/callback`을 사용할 예정이므로 https://mydomain/auth/google/callback 과 같이 세팅하였다.
 
 
-![screenshot1]({{ "/assets/images/Nodejs-Google-OAuth-2-0/screenshot1.jpg" | absolute_url }})  
+![screenshot1]({{ site.url }}/assets/images/Nodejs-Google-OAuth-2-0/screenshot1.jpg)  
 
 # Passport.js 세팅
 먼저 `npm install` 명령어를 이용하여 **passport** 라이브러리와 **passport-google-oauth20** 라이브러리를 설치한다. **passport-google-oauth2** 라는 이름의 라이브러리도 존재하는데, 라이브러리 문서를 참고하여 확인하고 자신의 입맛에 맞는 라이브러리를 선택하여 사용하면 된다. 여기서는 **passport-google-oauth20**를 사용하고 그것에 맞춰 설명할 것이다.

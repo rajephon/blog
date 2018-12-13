@@ -24,15 +24,15 @@ mailgun은 한 달에 1만 건까지 이메일을 무료로 전송할 수 있으
 ## 도메인 인증
 먼저, AWS 콘솔에서 SES(Simple Email Service)를 선택하고 리전을 고른다. 리전은 미국 동부(버지니아 북부), 미국 서부(오레곤), EU(아일랜드) 중에 고를 수 있다. 본인은 미국 서부(오레곤)을 선택했다.
 
-![SES 00]({{ "/assets/images/Amazon-SES-Setup-00/00.png" | absolute_url }})  
+![SES 00]({{ site.url }}/assets/images/Amazon-SES-Setup-00/00.png)  
 
 그리고 좌측 메뉴에서 `Domains`를 선택하고, `Verify New Domain`을 눌러 도메인을 등록한다. `Generate DKIM Settings`도 체크해서 DKIM 세팅을 생성할 수 있게 한다. DKIM은 `DomainKeys Identified Mail`의 약어로 SPF와 마찬가지로 이메일 발신자가 위조되었는지 확인하기 위한 방법이다.
 
-![SES 01]({{ "/assets/images/Amazon-SES-Setup-00/01.png" | absolute_url }})  
+![SES 01]({{ site.url }}/assets/images/Amazon-SES-Setup-00/01.png)  
 
 다음 단계로 넘어가면 도메인 소유 검증 및 이메일 수신을 하기 위해 다음 레코드를 등록하라고 나타난다. 본인이 사용 중인 DNS 관리 서비스에서 정보를 설정한다.
 
-![SES 02]({{ "/assets/images/Amazon-SES-Setup-00/02.png" | absolute_url }})  
+![SES 02]({{ site.url }}/assets/images/Amazon-SES-Setup-00/02.png)  
 
 DNS 세팅을 끝내고 잠시 후 도메인 리스트에서 새로 고침을 하면 모든 Status가 `verified`로 바뀐 것을 볼 수 있다.
 
@@ -88,9 +88,9 @@ DNS 세팅을 끝내고 잠시 후 도메인 리스트에서 새로 고침을 �
 5. 다시 AWS SES로 돌아와서, 이메일을 전달받을 메일 주소(본인의 경우 Gmail 주소)를 인증한다. (만약 이미 Sandbox 제한이 해제되어있을 경우, 이 과정은 생략해도 된다.)  
     `Identity Management` - `Email Addresses` - `Verify a New Email Address`를 누르고, 이메일 주소를 입력한 다음, 인증 메일을 확인하면 바로 처리된다. 
 6. 이제 AWS SES에서 `Email Receiving` - `Rule Sets`로 이동한다. 만들어둔 Rule Set이 있을 경우 해당 Rule Set으로, 없을 경우 새 Rule Set을 만든다. 그리고 `Create Rule`을 눌러 새 룰을 만든다. 
-    ![SES 03]({{ "/assets/images/Amazon-SES-Setup-00/03.png" | absolute_url }})  
+    ![SES 03]({{ site.url }}/assets/images/Amazon-SES-Setup-00/03.png)  
 7. `Recipients`에서는 내가 포워딩시키고 싶은 앞서 등록한 도메인의 이메일 주소를 적는다. 여기에 적은 이메일 주소로 메일이 오면 Lambda 코드에 적어둔 주소로 보낸다.
-    ![SES 04]({{ "/assets/images/Amazon-SES-Setup-00/04.png" | absolute_url }})  
+    ![SES 04]({{ site.url }}/assets/images/Amazon-SES-Setup-00/04.png)  
 8. 액션 설정 페이지에서, `S3` - `Lambda`순으로 액션을 만들고, 이전에 만들고 설정한 Bucket, Key Prefix, Lambda Function 이름을 설정한다. 
 9. Rule 이름을 지어주고, `Enable spam and virus scanning`은 꼭 체크한다.
     만약 SES에서 `lambda:InvokeFunction` 권한 추가를 요청하면, 허용한다.
@@ -120,7 +120,7 @@ DNS 세팅을 끝내고 잠시 후 도메인 리스트에서 새로 고침을 �
 
 모든 설정이 끝난 다음, 다른 이메일에서 위에서 설정한 내 도메인을 사용하는 이메일 주소로 테스트 메일을 전송하면 중계가 정상적으로 이루어지는 것을 확인할 수 있다.
 
-![SES 05]({{ "/assets/images/Amazon-SES-Setup-00/05.png" | absolute_url }})  
+![SES 05]({{ site.url }}/assets/images/Amazon-SES-Setup-00/05.png)  
 
 여담으로, 이메일 포워딩도 결국 SES, S3, Lambda 같은 아마존 자원을 사용하기에, 비용이 많이 발생하지 않을까 걱정했는데, Github Issue 글을 보니 4만 8천건당 1달러 정도로 아주 작아 신경 쓰지 않아도 될 정도라고 한다. ([Link](https://github.com/arithmetric/aws-lambda-ses-forwarder/issues/68#issuecomment-418201013))
 
@@ -135,10 +135,10 @@ DNS 세팅을 끝내고 잠시 후 도메인 리스트에서 새로 고침을 �
 1. 먼저, 발신에 사용할 이메일 주소를 인증해야 한다. AWS SES - `Identity Management` - `Email Addresses` - `Verify a New Email Address`에서 발신에 사용할 내 도메인 이메일 주소를 추가한다. 내 도메인 이메일 주소로 인증 메일이 전송된다. Gmail로 중계 처리되어있으니 문제없이 인증을 해낸다.
 2. AWS SES - `Email Sending` - `SMTP Settings` - `Create My SMTP Credentials`를 눌러 SMT 인증용 게정을 생성한다. Credentials 파일을 다운로드한 다음 안전한 곳에 저장한다.
 3. Gmail에서 설정 - `계정 및 가져오기` - `다른 주소에서 메일 보내기` - `다른 이메일 주소 추가`를 클릭한다. 이름은 메일 발송 시 타인에게 표시될 기본 이름을 작성하고, 등록할 내 도메인 이메일 주소를 입력한다.
-    ![SES 06]({{ "/assets/images/Amazon-SES-Setup-00/06.png" | absolute_url }})  
+    ![SES 06]({{ site.url }}/assets/images/Amazon-SES-Setup-00/06.png)  
 4. SMTP 서버, 사용자 이름, 비밀번호는 모두 Credentials.csv에 있는 그대로 입력한다.  
     그리고 계정 추가 버튼을 누르면 인증 메일이 발송되는데, 메일이 도착하는 대로 메일에 있는 인증 코드를 입력하거나 인증 링크를 누르면 모든 설정이 끝난다.
-    ![SES 07]({{ "/assets/images/Amazon-SES-Setup-00/07.png" | absolute_url }})  
+    ![SES 07]({{ site.url }}/assets/images/Amazon-SES-Setup-00/07.png)  
 5. 모든 과정이 끝나고 `편지 쓰기`를 눌러보면 `보낸 사람`을 내가 추가한 메일 주소로 할 수 있는 것을 확인할 수 있다.
 
 ### AWS SDK를 활용하여 메일 전송하기
@@ -194,7 +194,7 @@ $ node index.js
 sendEmail: {"from":"내-도메인-이메일-주소","to":["수신자-이메일-주소"]}
 <some-id@us-west-2.amazonses.com>
 ```
-![SES 08]({{ "/assets/images/Amazon-SES-Setup-00/08.png" | absolute_url }})  
+![SES 08]({{ site.url }}/assets/images/Amazon-SES-Setup-00/08.png)  
 
 수신 메일 주소의 메일함에 들어가 보면, 메일이 잘 도착한 것을 확인할 수 있다.
 

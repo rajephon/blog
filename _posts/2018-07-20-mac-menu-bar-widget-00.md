@@ -16,7 +16,7 @@ pinned: true
 이와 관련된 것들을 이번 주제의 블로그 포스팅을 통해 순차적으로 기록해 나갈 예정입니다.
 
 ## 프로젝트 생성 및 아이콘 추가
-![CreateProject]({{ "/assets/images/MenuBarApp-00/00.png" | absolute_url }})  
+![CreateProject]({{ site.url }}/assets/images/MenuBarApp-00/00.png)  
 Xcode에서 Cocoa App으로 프로젝트를 생성해주세요. `Use Storyboards`를 제외한 `Include UI Tests` 등은 모두 체크를 해제합니다.
 
 그리고 `AppDelegate.swift`에서 `statusItem`를 정의합니다.
@@ -25,7 +25,7 @@ let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLen
 ```
 `statusItem`은 이름 그대로 `Status Item`입니다. macOS의 상단 메뉴 바에서 앱 아이콘을 표시하고 누를 경우 창을 표시하는 버튼 역할을 합니다.  
 
-![Assets.xcassets]({{ "/assets/images/MenuBarApp-00/01.png" | absolute_url }})  
+![Assets.xcassets]({{ site.url }}/assets/images/MenuBarApp-00/01.png)  
 다음으로 [버튼 이미지](https://github.com/rajephon/LocalPortScanner/blob/master/PortScanner/Assets.xcassets/StatusBarButtonImage.imageset/StatusBarButtonImage%402x.png)를 추가합니다. 버튼 이미지는 32x32의 크기로 만들었습니다.  
 이미지 이름을 `StatusBarButtonImage@2x.png`로 수정하여 `Assets.xcassets`로 드래그하여 추가합니다. 그리고 우측 `Image Set`의 `Render As`속성의 값을 `Template Image`로 설정합니다.
 
@@ -40,18 +40,18 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 ```
 다음으로 `AppDelegate.swift`에서 `statusItem`을 만들고, `statusItem.button`에 해당 이미지를 지정해줍니다.
 
-![Manu Bar]({{ "/assets/images/MenuBarApp-00/02.png" | absolute_url }})  
+![Manu Bar]({{ site.url }}/assets/images/MenuBarApp-00/02.png)  
 
 그리고 Xcode에서 `Build & Run`을 할 경우, 다음과 같이 상단 메뉴 바에 우리가 추가한 아이콘이 들어가있는 것을 확인하실 수 있습니다.  
 물론 아직, 동작 기능을 추가하지 않았기 때문에 눌러도 반응이 없습니다. 
 
 ## Dock Icon 비활성화 및 Main Window 제거
 
-![Manu Bar]({{ "/assets/images/MenuBarApp-00/03.png" | absolute_url }})  
+![Manu Bar]({{ site.url }}/assets/images/MenuBarApp-00/03.png)  
 
 Xcode 프로젝트의 `Info.plist`에 `Application is agent (UIElement)`라는 Key를 추가합니다. 입력이 번거로우실 경우 `LSUIElement`라고 입력하면 자동으로 변환이 될 것입니다. 그리고 Value를 Boolean `YES`로 설정합니다.
 
-![Story Board]({{ "/assets/images/MenuBarApp-00/04.png" | absolute_url }})  
+![Story Board]({{ site.url }}/assets/images/MenuBarApp-00/04.png)  
 다음으로 `Main.storyboard`를 엽니다. `Window Controller Scene`을 선택 - 삭제합니다.  
 <u>`View Controller Scene`은 그대로 둡니다.</u> 이것은 추후에 활용할 것입니다.
 
@@ -61,7 +61,7 @@ Xcode 프로젝트의 `Info.plist`에 `Application is agent (UIElement)`라는 K
 
 ## Popover 추가
 이제부터, Status Item을 클릭할 경우의 팝오버 뷰가 나타나도록 새로 뷰 컨트롤러를 추가해봅니다. Xcode에서 `File - new - File...`을 클릭해서 새로운 파일을 생성합니다. 생성 항목은 `Source`의 `Cocos Class`를 선택합니다.
-![New View Conroller]({{ "/assets/images/MenuBarApp-00/05.png" | absolute_url }})  
+![New View Conroller]({{ site.url }}/assets/images/MenuBarApp-00/05.png)  
 
 이름은 `SampleViewController`로 했습니다.  
 `Subclass of`는 `NSViewController`를 지정하여 상속합니다.  
@@ -70,7 +70,7 @@ Xcode 프로젝트의 `Info.plist`에 `Application is agent (UIElement)`라는 K
 
 `Next`를 클릭하고, 적당한 위치(`AppDelegate.swift`와 같은 위치를 권장합니다.)를 지정하여 파일을 생성합니다.
 
-![Storyboard 2]({{ "/assets/images/MenuBarApp-00/06.png" | absolute_url }})  
+![Storyboard 2]({{ site.url }}/assets/images/MenuBarApp-00/06.png)  
 
 `Main.storyboard`선택, 이전에 남겨뒀던 `View Controller Scene`의 `View Controller`를 선택합니다.  
 `Identity Inspector`에서 Class 이름을 방금 새로만든 Class name으로 설정합니다. 저는 `SampleViewController`라고 이름을 지었으므로 `SampleViewController`라고 설정합니다. `Storyboard ID`의 값도 똑같이 지정합니다.
@@ -141,7 +141,7 @@ func closePopover(sender: Any?) {
 
 `showPopover()`는 사용자에게 popover를 보여줍니다. `status item`의 아이콘 밑에 말풍선 모양으로 나타납니다. `closePopover()`는 반대로 popover를 감춥니다. 그리고 `togglePopover()`는 popover가 보여지고 있을 시 감추고, 감춰져 있을 시 보여주도록 동작합니다.
 
-![popover]({{ "/assets/images/MenuBarApp-00/07.png" | absolute_url }})  
+![popover]({{ site.url }}/assets/images/MenuBarApp-00/07.png)  
 
 Xcode에서 `build & run`을 수행 후 status item을 클릭시 다음과 같이 빈 팝업창이 나타날 경우 성공입니다. YEAH! 🎉
 
