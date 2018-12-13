@@ -12,7 +12,12 @@
                 {% if project.website %}
                 <a href="{{ project.website }} "><i class="fa fa-fw fa-home"></i>Homepage</a>
                 {% endif %}
-
+                {% if project.appstore %}
+                <a href="{{ project.appstore }} " target="_blank"><i class="fa fa-fw fa-apple"></i>Appstore</a>
+                {% endif %}
+                {% if project.googleplay %}
+                <a href="{{ project.googleplay }} " target="_blank"><i class="fa fa-fw fa-android"></i>GooglePlay</a>
+                {% endif %}
             </div>
     </div>
 {% endfor %}

@@ -1,4 +1,40 @@
-- name: leonids
-  descr: "Bacon ipsum dolor sit amet doner meatball jowl short ribs, chicken prosciutto salami frankfurter. Pig drumstick turducken short ribs, brisket meatloaf ham hock shankle andouille corned beef strip steak. Venison ham bresaola strip steak. Pork belly ribeye prosciutto t-bone."
-  image: pong.png
-  github: https://github.com/renyuanz/leonids
+- name: 요코소 컴포저(iOS)
+  descr: "온라인 게임 마비노기의 게임 내에서 사용되는 MML 악보를 작성하고 사운드로 변환하여 들어볼 수 있는 iOS 앱.
+  MML포맷으로 작성된 악보를 MIDI파일로 변환하는 컨버터를 C++ 라이브러리 형태로 작성, 사운드폰트 재생 시스템 적용. 재생, 저장, 불러오기, 내보내기, 앱 내 결제 등 제공"
+  # image: pong.png
+  github: https://github.com/rajephon/YKSConverter
+  appstore: https://itunes.apple.com/app/apple-store/id961664211
+
+- name: 싴갤러스 모바일 웹앱(Android, iOS)
+  descr: "온라인 게임 마비노기 관련 정보를 공유하고 교류하는 팬사이트 '싴갤러스'의 모바일 웹 어플리케이션. 로그인, 푸시 알림 서비스 등의 기능 제공"
+  appstore: https://itunes.apple.com/app/apple-store/id1147773239
+  googleplay: https://goo.gl/kEDkRB
+
+- name: 요코소 프로젝트(Web)
+  descr: "MMORPG 마비노기의 게임 내에서 사용되는 MML악보를 공유하는 팬 사이트. MML 악보 코드를 웹 기반에서 Basic MML-mp3 파이프라인을 통한 변환/재생 기능 제공.
+   사운드폰트를 활용하여 게임 내부와 똑같은 사운드로 미리 들어볼 수 있는 특징으로 30,000명 이상의 유저가 활동. 저작권법 개정에 대한 문제로 운영 종료."
+
+- name: Local Port Scanner(macOS)
+  descr: "lsof를 이용해 현재 Listening 상태로 열린 TCP 포트를 리스트업해주는 macOS용 메뉴바 앱.
+  메뉴 바에서 동작하는 위젯 프로그램 개발과 권한 상승요청, macOS 앱에서도 릴리즈까지의 경험을 해보고자 하여 진행"
+  github: https://github.com/rajephon/LocalPortScanner
+
+- name: 졸업작품 아트옥션(iOS, Android)
+  descr: "대학교 졸업작품으로 진행한 게임 개발 프로젝트. 미술품 경매를 소재로 한 스토리 진행방식의 캐주얼 모바일 게임. 크로스 플랫폼 개발이 가능한 Cocos2d-x를 활용하여 C++로 개발 진행<br>
+          '서울과학기술대학교 2014 공학계열 졸업작품 전시회’ 장려상 수상"
+
+# - name: leonids
+#   descr: "Bacon ipsum dolor sit amet doner meatball jowl short ribs, chicken prosciutto salami frankfurter. Pig drumstick turducken short ribs, brisket meatloaf ham hock shankle andouille corned beef strip steak. Venison ham bresaola strip steak. Pork belly ribeye prosciutto t-bone."
+#   image: pong.png
+#   github: https://github.com/renyuanz/leonids
+
+
+
+
+# - YokosoComposer([iOS](https://itunes.apple.com/ng/app/%EC%9A%94%EC%BD%94%EC%86%8C-%EC%BB%B4%ED%8F%AC%EC%A0%80-yokoso-composer/id961664211?mt=8))
+# - 싴갤러스 모바일 웹앱([iOS](https://itunes.apple.com/tt/app/%EC%8B%B4%EA%B0%A4%EB%9F%AC%EC%8A%A4/id1147773239?mt=8), [Android](https://play.google.com/store/apps/details?id=net.fantazm.chicgallers))
+# - Yokoso Project
+# - Local Port Scanner([macOS](https://github.com/rajephon/LocalPortScanner))
+# - 졸업작품 '아트옥션(ArtAuction)'
+# - 정부 규제 정보 자동 수집 처리(외주)
+# - 개비스콘 짤 생성기([Link](https://rajephon.github.io/gvsc/))
