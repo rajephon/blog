@@ -1,5 +1,10 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Devsisters
+  link: http://www.devsisters.com/
+  date: 2018.12 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: S/W Engineer
+
 - name: UoS 세운캠퍼스
   link: http://sewoon.uos.ac.kr/
   date: 2018.10 - 2018.12
