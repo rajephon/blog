@@ -3,6 +3,8 @@ title: "Unity - 선 샤프트(Sun shafts) / 볼류메트릭 라이팅(Volumetric
 date: 2018-10-28 17:42:30 +0900
 categories: Unity
 tags: Unity StandardAssets VolumetricFog VolumetricLighting
+comments: true
+pinned: true
 ---
 ![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/7.png) 
 ## Intro
