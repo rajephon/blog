@@ -6,7 +6,7 @@
 title: "rajephon's blog"
 email: "rajephon@gmail.com"
 description: "게임과 영화를 좋아하는 개발자의 블로그."
-url: "https://rajephon.github.io/blog" # the base hostname & protocol for your site
+url: "https://blog.rajephon.dev" # the base hostname & protocol for your site
 # baseurl: "/blog"
 keywords: ["blog", "jekyll"]
 
