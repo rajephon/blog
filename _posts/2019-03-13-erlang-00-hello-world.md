@@ -89,7 +89,8 @@ start(_Type, _Args) ->
   erlang_hello_world_sup:start_link().
 ```
 
-수정이 끝날 경우 `erlang_hello_world_app.erl`은 다음과 같은 모습입니다.
+- `io:fwrite("Hello world!~n"),`의 끝은 콤마(`,`)인 점을 주의해주세요.
+- 수정이 끝날 경우 `erlang_hello_world_app.erl`은 다음과 같은 모습입니다.
 
 ```erlang
 -module(erlang_hello_world_app).
@@ -106,8 +107,7 @@ stop(_State) ->
   ok.
 ```
 
-- `io:fwrite("Hello world!~n"),`의 끝은 콤마(`,`)인 점을 주의해주세요.
-- 수정이 완료되었으면 저장 후 실행시켜봅시다.
+- 완료되었으면 저장 후 실행시켜봅시다.
 
 ```bash
 make run
