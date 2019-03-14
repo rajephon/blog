@@ -89,21 +89,9 @@ start(_Type, _Args) ->
   erlang_hello_world_sup:start_link().
 ```
 
-- `io:fwrite("Hello world!~n"),`의 끝은 콤마(`,`)인 점을 주의해주세요.
-- 수정이 완료되었으면 저장 후 실행시켜봅시다.
-
-```bash
-make run
-```
-
-![erl-02]({{ site.url }}/assets/images/2019-03-13-erlang-00-hello-world/02.png)
-
-짜잔! 다음과 같이 `Hello world!`가 출력되면 정상적으로 동작한 것입니다.
-
-## 구조 설명
+수정이 끝날 경우 `erlang_hello_world_app.erl`은 다음과 같은 모습입니다.
 
 ```erlang
-%% erlang_hello_world_app.erl
 -module(erlang_hello_world_app).
 -behaviour(application).
 
@@ -116,8 +104,20 @@ start(_Type, _Args) ->
 
 stop(_State) ->
   ok.
-
 ```
+
+- `io:fwrite("Hello world!~n"),`의 끝은 콤마(`,`)인 점을 주의해주세요.
+- 수정이 완료되었으면 저장 후 실행시켜봅시다.
+
+```bash
+make run
+```
+
+![erl-02]({{ site.url }}/assets/images/2019-03-13-erlang-00-hello-world/02.png)
+
+짜잔! 다음과 같이 `Hello world!`가 출력되면 정상적으로 동작한 것입니다.
+
+## 구조 설명
 
 - `%% erlang_hello_world_app.erl` 얼랭에서의 주석입니다. `%%`는 여타 다른 언어의 `//`와 유사합니다.
 - `-module(erlang_hello_world_app).`모듈 이름 정의입니다. 이 이름을 이용해서 모듈을 부르거나 모듈 내의 함수를 호출할 수 있습니다.
