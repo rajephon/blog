@@ -53,8 +53,8 @@ io:fwrite("Hello world!~n").
 
 ## Erlang Build Tool을 활용해보자
 
-이제 터미널에서 얼랭을 시작하는 방법을 알았으니, 얼랭 프로젝트를 구성해봅시다.  
-얼랭에서 사용하는 build tool은 크게 `rebar3`와 `erlang.mk`가 있습니다. `rebar3`는 Erlang/OTP에서 공식적으로 후원하는 build tool이며 완전히 얼랭으로 작성되었습니다. `erlang.mk`는 Makefile을 사용하기에 익숙하신 분들이라면 사용하기 편할 겁니다. 다른 여러 블로거분들께서 `rebar3`로 시작하는 글을 많이 작성해주셔서 여기서는 `erlang.mk`를 사용해보겠습니다.
+이제 터미널에서 얼랭을 시작하는 방법을 알았으니, 얼랭 프로젝트를 구성해봅시다.
+얼랭에서 사용하는 build tool은 크게 `rebar3`와 `erlang.mk`가 있습니다. `rebar3`는 Erlang/OTP에서 공식적으로 후원하는 build tool이며 완전히 얼랭으로 작성되었습니다. `erlang.mk`는 Makefile을 사용합니다. Makefile에 익숙하신 분들이라면 사용하기 편할 겁니다. 다른 여러 블로거분들께서 `rebar3`로 시작하는 글을 많이 작성해주셔서 여기서는 `erlang.mk`를 사용해보겠습니다.
 
 - 먼저 프로젝트를 셋업할 적절한 디렉토리를 만들어주세요.
 
