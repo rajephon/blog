@@ -14,11 +14,11 @@ Photo by [Vincent Botta](https://unsplash.com/photos/bv_rJXpNU9I?utm_source=unsp
 
 ## Erlang 에서의 데이터 타입들
 
-### Terms
+### 1. Terms
 
 어떤 데이터 타입의 데이터들은 전부 `term`이라 부릅니다. 기억해주세요!
 
-### Number
+### 2. Number
 
 얼랭에서 숫자형은 **정수**와, **부동 소수점**이 있습니다. 그리고 일반적인 표현법 외에 얼랭만의 표기법을 이용할 수 있습니다.
 
@@ -29,7 +29,7 @@ Photo by [Vincent Botta](https://unsplash.com/photos/bv_rJXpNU9I?utm_source=unsp
 
 글로만 설명해서는 잘 와닿지 않을 테니 직접 체험해봅시다. 선호하는 터미널을 열고 `erl` 명령어를 입력해서 얼랭을 실행합니다. 그리고 아래의 예제를 따라 해봅시다.
 
-Examples:
+#### Examples
 
 ```erlang
 1> 42.
@@ -52,7 +52,7 @@ Examples:
 
 `$A`를 입력하니 `A`의 아스키코드값인 `65`가 입력됩니다. 그리고 `2#101`을 입력하니 2진수 101의 10진수 값인 `5`가 입력됩니다. 바로 그겁니다.
 
-### Atom
+### 3. Atom
 
 `atom`은 리터럴이며, 이름이 있는 상수입니다. 얼랭 개발을 하며 정말 많이 마주할 것입니다.  
 기본적으로 영문 소문자로 시작하며, 숫자, `_`, `@` 이외의 문자가 포함될 경우 따옴표`'`로 묶어줘야 합니다.
@@ -66,7 +66,7 @@ phone_number
 'phone number'
 ```
 
-### Bit Strings and Binaries
+### 4. Bit Strings and Binaries
 
 bit string은 형식이 지정되지 않은 메모리 영역을 보관할 때 사용됩니다.
 
@@ -74,7 +74,7 @@ Bit strings은 [bit syntax](http://erlang.org/doc/reference_manual/expressions.h
 
 8비트로 고르게 나눌 수 있는 Bit strings을 `바이너리(binaries)`라고 부릅니다.
 
-Examples:
+#### Examples
 
 ``` Erlang
 1> <<10, 20>>
@@ -87,22 +87,22 @@ Examples:
 
 더 자세한 예제는 [프로그래밍 예제](http://erlang.org/doc/programming_examples/bit_syntax.html)를 참고해주세요.
 
-### Reference
+### 5. Reference
 
 Reference는 Erlang 런타임 시스템의 고유한 term이며, `make_ref/0` 호출에 의해 생성됩니다. [참고](http://erlang.org/doc/man/erlang.html#make_ref-0)
 
-Examples:
+#### Examples
 
 ```erlang
 4> Tag = make_ref().
 #Ref<0.2589822212.2572943363.197802>
 ```
 
-### Fun
+### 6. Fun
 
 `fun`은 functional object입니다. `fun`은 익명 함수를 만들고, 그 함수 자체를 argument로 다른 함수에 전달할 수 있게 합니다.
 
-Examples:
+#### Examples
 
 ```erlang
 1> Fun1 = fun (X) -> X+1 end.
@@ -113,7 +113,7 @@ Examples:
 
 [Fun Expressions](http://erlang.org/doc/reference_manual/expressions.html#funs)나 [Programming Examples](http://erlang.org/doc/programming_examples/funs.html)에서 더 많은 정보를 찾아볼 수 있습니다.
 
-### Port Identifier
+### 7. Port Identifier
 
 `Port Identifier`는 Erlang port 식별자입니다.
 
@@ -121,7 +121,7 @@ Examples:
 
 포트에 대한 자세한 정보는 [Ports and Port Drivers](http://erlang.org/doc/reference_manual/ports.html)에서 확인할 수 있습니다.
 
-### Pid
+### 8. Pid
 
 프로세스 식별자입니다. 아래와 같은 BIFs(Built in Functions)에서 프로세스를 생성하고, return value로 Pid를 반환합니다.
 
@@ -129,7 +129,7 @@ Examples:
 - `spawn_link/1,2,3,4`
 - `spawn_opt/4`
 
-Example:
+#### Examples
 
 `m.erl`이라는 파일을 생성하고 아래의 코드를 입력해주세요.
 
@@ -160,7 +160,7 @@ who_are_you
 간단히 설명하면, `spawn` 함수로 이용해 `m` 모듈의 프로세스를 실행합니다. `m` 모듈은 `who_are_you`라는 메세지를 받으면, 자기 자신의 `Pid`를 출력합니다.  
 `P ! who_are_you.`는 `P`에 들어있는 `m` 모듈 프로세스의 Pid로, `who_are_you`라는 메세지를 보내라는 의미입니다. [Processes](http://erlang.org/doc/reference_manual/processes.html)에서 자세히 알아볼 수 있습니다.
 
-### Tuple
+### 9. Tuple
 
 `Tuple`은 고정된 숫자의 term을 담을 수 있는 복합 데이터 타입입니다.
 
@@ -172,7 +172,7 @@ who_are_you
 
 `Tuple`을 다룰 수 있는 다양한 BIFs가 있습니다.
 
-Examples:
+#### Examples
 
 ```erlang
 1> P = {adam, 24, {july, 29}}.
@@ -189,7 +189,7 @@ adam
 0
 ```
 
-### Map
+### 10. Map
 
 `Map`은 Key-Value 조합의 복합 데이터 타입입니다.
 
@@ -216,7 +216,7 @@ adam
 0
 ```
 
-### List
+### 11. List
 
 `List`는 가변 개수의 term을 가지는 복합 데이터 타입입니다.
 
@@ -228,7 +228,7 @@ adam
 
 일반적으로, 리스트는 빈 리스트 `[]`, **head**(첫 번째 element), **tail**(나머지 element)로 구분됩니다. head와 tail은 `[H|T]`로 표현할 수 있습니다. `[Term1,...,TermN]`는 `[Term1|[...|[TermN|[]]]]` 처럼 응용하여 작성할 수 있습니다.
 
-Examples:
+#### Examples
 
 ```erlang
 1> L1 = [a,2,{c,4}].
@@ -249,25 +249,25 @@ a
 
 리스트 처리 함수들은 [lists](http://erlang.org/doc/man/lists.html)에서 찾아볼 수 있습니다.
 
-### String
+### 12. String
 
 String은 쌍따옴표`"`로 감싸서 사용합니다. 하지만 이는 Erlang의 데이터 타입이 아닙니다. string `"hello"`는 `[$h,$e,$l,$l,$o]`의 줄임말이며, `[104,101,108,108,111]`을 의미합니다.
 
 두 개의 인접한 스트링 리터럴은 하나로 연결됩니다. 이 과정은 컴파일 과정에서 이루어지므로, 런타임 오버헤드가 발생하지 않습니다.
 
-Example:
+#### Examples
 
 ```erlang
 1> "string" "42".
 "string42"
 ```
 
-### Record
+### 13. Record
 
 `Record`는 고정된 개수의 엘리먼트를 보관하기 위한 데이터 구조입니다. 이름을 가진 필드와 C의 struct와 유사하지만, record는 실제 데이터 타입이 아닙니다. 그 대신에, 컴파일을 진행하는 동안 `Tuple` 표현식으로 변환됩니다. 그러므로, 특별한 액션이 취해지지 않는 이상 `shell`은 Record 표현식을 이해하지 못합니다.  
 자세한 사항은 [shell (3)](http://erlang.org/doc/man/shell.html)을 참고해주세요.
 
-Examples:
+#### Examples
 
 `person.erl` 파일을 생성하고, 아래의 코드를 입력해주세요.
 
@@ -292,7 +292,7 @@ new(Name, Age) ->
 
 [Records](http://erlang.org/doc/reference_manual/records.html)와 [Programming Examples](http://erlang.org/doc/programming_examples/records.html)에서 더 자세한 정보를 확인할 수 있습니다.
 
-### Boolean
+### 14. Boolean
 
 Erlang에서는 Boolean 데이터 타입이 존재하지 않습니다. 대신, atom `true`와 `false`을 Boolean으로 사용합니다.
 
@@ -303,7 +303,7 @@ true
 true
 ```
 
-### Escape Sequences
+### 15. Escape Sequences
 
 string과 따옴표`'`로 감싼 atom 에서 다음 escape sequences를 인식할 수 있습니다.
 
@@ -324,11 +324,11 @@ string과 따옴표`'`로 감싼 atom 에서 다음 escape sequences를 인식�
 - `\"` : Double quote
 - `\\` : Backslash
 
-### Type Conversions
+### 16. Type Conversions
 
 BIF로 타입 변환을 위한 많은 함수들이 있습니다. [얼랭 메뉴얼](http://erlang.org/doc/man/erlang.html)에서 확인할 수 있습니다.
 
-Examples:
+#### Examples
 
 ```erlang
 1> atom_to_list(hello).
