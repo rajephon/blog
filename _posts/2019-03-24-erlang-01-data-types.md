@@ -57,7 +57,7 @@ Photo by [Vincent Botta](https://unsplash.com/photos/bv_rJXpNU9I?utm_source=unsp
 `atom`은 리터럴이며, 이름이 있는 상수입니다. 얼랭 개발을 하며 정말 많이 마주할 것입니다.  
 기본적으로 영문 소문자로 시작하며, 숫자, `_`, `@` 이외의 문자가 포함될 경우 따옴표`'`로 묶어줘야 합니다.
 
-Examples:
+#### Examples
 
 ```erlang
 hello
