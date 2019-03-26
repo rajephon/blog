@@ -22,14 +22,14 @@ pinned: true
 
 ## Erlang 설치
 
-- 터미널을 열어주세요. 기본 터미널, iTerm2 등 상관없습니다. 선호하는 것으로 사용합시다
-- MacOS에서 Erlang을 설치하려면 `Homebrew`가 필요합니다. 설치되어있지 않을 경우 다음의 명령어를 이용해서 설치해주세요
+- 터미널을 열어주세요. 기본 터미널, iTerm2 등 상관없습니다. 선호하는 것으로 사용합시다.
+- MacOS에서 Erlang을 설치하려면 `Homebrew`가 필요합니다. 설치되어있지 않을 경우 다음의 명령어를 이용해서 설치해주세요.
 
 ```bash
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
 ```
 
-- brew를 이용해 erlang을 설치합시다
+- brew를 이용해 erlang을 설치합시다.
 
 ```bash
 brew update
