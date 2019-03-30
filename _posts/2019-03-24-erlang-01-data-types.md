@@ -12,7 +12,7 @@ pinned: true
 
 Photo by [Vincent Botta](https://unsplash.com/photos/bv_rJXpNU9I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/data-type?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-지난 포스트 [Erlang - 00. Hello World]({{ site.url }}{% post_url 2019-03-13-erlang-00-hello-world %})에서  Erlang 개발 환경 세팅에서부터, 연습용 프로젝트를 생성하고, `Hello World`를 출력해보는 것까지 했습니다. 쉽게 따라 하셨을거라 생각합니다. 패키지 매니저가 워낙 좋아서 크게 어려운 점이 없었을 거예요.
+지난 포스트 [Erlang - 00. Hello World]({{ site.url }}{% post_url 2019-03-13-erlang-00-hello-world %})에서 Erlang 개발 환경 세팅에서부터, 연습용 프로젝트를 생성하고, `Hello World`를 출력해보는 것까지 했습니다. 쉽게 따라 하셨을거라 생각합니다. 패키지 매니저가 워낙 좋아서 크게 어려운 점이 없었을 거예요.
 
 오늘부터는 얼랭의 문법에 대해 알아봅시다. 첫 시간에는 그중에 가장 기본 중의 기본인 데이터 타입에 대해 알아봅시다.
 
@@ -370,6 +370,13 @@ hello
 17> binary_to_float(<<"7.000e+00">>).
 7.0
 ```
+
+## 마무리
+
+수고하셨습니다! 무사히 얼랭의 데이터 타입에 대해 익혔습니다.  
+다음 포스트에서는 패턴 매칭에 대해 알아봅시다.
+
+[Erlang - 02. Pattern Matching]({{ site.url }}{% post_url 2019-03-27-erlang-02-pattern-matching %})
 
 ## Reference
 

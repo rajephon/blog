@@ -133,6 +133,8 @@ make run
 축하합니다! 당신은 얼랭에서 Hello World 찍기 퀘스트를 성공적으로 완료했습니다.  
 다음 포스트에 주제를 이어서 얼랭의 문법에 대해 다뤄보겠습니다.
 
+[Erlang - 01. Data Types]({{ site.url }}{% post_url 2019-03-24-erlang-01-data-types %})
+
 ## 기타 사항
 
 - make에 실패하면?
