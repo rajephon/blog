@@ -31,7 +31,7 @@ pinned: true
 그리고 사용자가 텍스트 필드에 키워드를 입력할 때마다 바로 `canvas`의 `strokeText`, `fillText`를 활용해 짤방 위에 그렸습니다.
 
 ```javascript
-var drawStroked = function drawStroked(ctx, text, x, y) {
+const drawStroked = function (ctx, text, x, y) {
     ctx.strokeStyle = '#222';
     ctx.lineWidth = 4;
     ctx.strokeText(text, x, y);
@@ -39,20 +39,20 @@ var drawStroked = function drawStroked(ctx, text, x, y) {
     ctx.fillStyle = 'white';
     ctx.fillText(text, x, y);
 }
-var fncAddKeyword = function addKeyword(ctx, txt, pos, color) {
+const fncAddKeyword = function (ctx, txt, pos, color) {
     ctx.shadowColor = color;
     ctx.font = "20pt 'Nanum Gothic'";
     ctx.lineWidth = 3;
     drawStroked(ctx, txt, pos.x, pos.y);
 }
-$('#txtBefore').keyup(function(e) {
-    var bf = $(this).val();
-    var bfSplit = bf.split(',');
-    var ctx = mainCanvas.getContext("2d");
+$txtBefore.keyup(function(e) {
+    const bf = $(this).val();
+    const bfSplit = bf.split(',');
+    const ctx = mainCanvas.getContext("2d");
     ctx.shadowColor = "transparent";
     ctx.drawImage(beforeImg, 0, 0);
-    var length = Math.min(bfSplit.length, beforPositionArr.length);
-    for (var idx = 0; idx < length; idx++) {
+    const length = Math.min(bfSplit.length, beforPositionArr.length);
+    for (let idx = 0; idx < length; idx++) {
         fncAddKeyword(ctx, bfSplit[idx], beforPositionArr[idx], "#ff5555");
     }
 });
@@ -63,7 +63,7 @@ $('#txtBefore').keyup(function(e) {
 
 ```javascript
 $('#btnDownload').click(function(){
-    var href = mainCanvas.toDataURL();
+    const href = mainCanvas.toDataURL();
     this.href = href;
     this.download = "gvsc.png";
 });
