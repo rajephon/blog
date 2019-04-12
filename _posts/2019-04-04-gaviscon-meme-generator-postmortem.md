@@ -51,9 +51,9 @@ $txtBefore.keyup(function(e) {
     const ctx = mainCanvas.getContext("2d");
     ctx.shadowColor = "transparent";
     ctx.drawImage(beforeImg, 0, 0);
-    const length = Math.min(bfSplit.length, beforPositionArr.length);
+    const length = Math.min(bfSplit.length, beforePositionArr.length);
     for (let idx = 0; idx < length; idx++) {
-        fncAddKeyword(ctx, bfSplit[idx], beforPositionArr[idx], "#ff5555");
+        fncAddKeyword(ctx, bfSplit[idx], beforePositionArr[idx], "#ff5555");
     }
 });
 ```
