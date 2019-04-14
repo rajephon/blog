@@ -197,7 +197,7 @@ h1
     `H2`는 바로 다음 원소인 `2`가 들어갑니다. 그리고 `|`의 우측 Tail 자리엔 Head에서 빠진 원소를 제외한 나머지와 패턴 매칭을 수행합니다.  
     결과적으로 `[H3 | Tails] = [3,4,5,6,7,8,9,10]`를 수행할 차례가 되는 거죠. 결과는 어떻게 나올지 아시겠죠?
 - 6번과 8번은 반대로 Head와 Tail을 Cons Operator를 통해 합친 값을 변수에 할당합니다. 원리는 똑같습니다.  
-    Head와 Tail의 합으로 결과가 나오는 과정을 머릿속에 그려봅시다.
+    Head와 Tail의 합으로 결과가 나오는 과정을 머리에 그려봅시다.
 
 ### List Comprehensions
 
@@ -257,7 +257,7 @@ List Comprehension(*적절한 한국어 표기를 못 찾아 그대로 표기�
 ```
 
 
-마블 시네마틱 유니버스 시리즈에는 정말 다양한 연령대의 영웅들이 나오고 있습니다. 영웅의 이름과 나이 정보를 리스트에 할당하고, 20세 이하의 영웅들만 추려내봅시다. (영웅이 너무 많아서 여기선 일부 영웅들의 정보만 활용했습니다)  
+마블 시네마틱 유니버스 시리즈에는 정말 다양한 연령대의 영웅들이 나오고 있습니다. 영웅의 이름과 나이 정보를 리스트에 할당하고, 20세 미만의 영웅들만 추려내봅시다. (영웅이 너무 많아서 여기선 일부 영웅들의 정보만 활용했습니다)  
 먼저, `{{name,"Iron Man"},{age,48}}`과 같은 튜플 형태로 리스트를 만들어 `Members`에 할당합니다. 그리고 패턴 매칭과 List Comprehensions를 활용하여 20세 미만의 영웅들을 추려냅니다.  
 `{{_, Name}, {_, Age}} <- Members`로 각 영웅들의 이름과 나이 정보를 각각 `Name`과 `Age`에 가져옵니다. atom의 위치는 편의상 익명 변수(*anonymous variable*)를 사용했지만, `{{name, Name}, {age, Age}} <- Members`처럼 작성해도 무방합니다.  
 `Age`를 이용해 조건식에서 나이를 비교하고, 조건에 만족할 경우 `Name`를 새로 생성될 리스트에 순차적으로 담았습니다.
@@ -289,7 +289,7 @@ true
  {3,some_value},
  {4,some_value},
  {5,some_value}]
-16>  lists:keyfind(3, 1, A). %% tuple 리스트에서 특정 key를 가진 요소를 찾습니다. 두 번째 param은 tuple 내에서 비교할 key의 위치입니다. (*1부터 시작합니다.*)
+16> lists:keyfind(3, 1, A). %% tuple 리스트에서 특정 key를 가진 요소를 찾습니다. 두 번째 param은 tuple 내에서 비교할 key의 위치입니다. (*1부터 시작합니다.*)
 {3,some_value}
 ```
 {% endraw %}
@@ -309,4 +309,4 @@ true
 - [Wikibooks: List Comprehensions](https://en.wikibooks.org/wiki/Erlang_Programming/List_Comprehensions)
 - [Stackoverflow: erlang How to get an element form a list by its positional index?](https://stackoverflow.com/a/22343507/5286905)
 
-[^1]: `2`는 파라미터 갯수입니다.
+[^1]: `2`는 파라미터 개수입니다.
