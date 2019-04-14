@@ -123,7 +123,10 @@ Photo by [Trang Nguyen](https://unsplash.com/photos/drke6MEs8Gg?utm_source=unspl
 수고하셨습니다. 얼랭의 패턴 매칭에 대해 무사히 익혔습니다!  
 간단하면서도 차별화되는 중요한 특징입니다. 얼랭의 모든 코드 작성은 패턴 매칭으로 이루어졌다고 생각해도 될 정도로 자주 사용될 것입니다.
 
-다음 포스트에서는 얼랭의 모듈에 대해 알아봅시다.
+다음 포스트에서는 얼랭의 리스트에 대해 알아봅시다.
+
+[Erlang - 03. Lists]({{ site.url }}{% post_url 2019-04-14-erlang-03-lists %})
+
 
 ## References
 
