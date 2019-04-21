@@ -300,6 +300,8 @@ true
 리스트 관련 함수들은 위에 설명한 것들 이외에도 정말 많이 있습니다. 전부 뼈가 되고 살이 되니 한 번쯤 [Erlang Reference Manual : lists](http://erlang.org/doc/man/lists.html)을 훑어보는 것을 추천합니다.  
 다음 포스트에서는 얼랭의 함수에 대해 알아봅시다.
 
+[Erlang - 04. Functions]({{ site.url }}{% post_url 2019-04-20-erlang-04-functions %})
+
 ## References
 
 - [Erlang Reference Manual : lists](http://erlang.org/doc/man/lists.html)
