@@ -6,6 +6,8 @@ date: 2019-04-25 14:38 +0900
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-25-erlang-05-rebar3-project-setup/banner-image.jpg)
 
+Photo by [Andrew Neel](https://unsplash.com/photos/cckf4TsHAuw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/project?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 ## 시작하기에 앞서
 
 지난 포스트 [Erlang - 04. Functions]({{ site.url }}{% post_url 2019-04-20-erlang-04-functions %})에서 얼랭의 함수에 대해 알아봤습니다.  
