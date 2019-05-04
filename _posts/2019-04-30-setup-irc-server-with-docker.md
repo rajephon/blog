@@ -283,7 +283,8 @@ Docker 로고의 아스키 아트가 인상적입니다. 서버 사이드에서�
 
 ## Reference
 
-- [RFC 7194 - Default Port for Internet Relay Chat (IRC) via TLS/SSL](https://tools.ietf.org/html/rfc7194)
+- [🐙 Quick Start: Docker Compose](https://velog.io/@godori/-Docker-Compose-Quick-Guide)
 - [Docker hub - inspircd-docker](https://hub.docker.com/r/inspircd/inspircd-docker)
+- [RFC 7194 - Default Port for Internet Relay Chat (IRC) via TLS/SSL](https://tools.ietf.org/html/rfc7194)
 - [suchsecurity.com - Using LetsEncrypt for your IRCd](https://suchsecurity.com/using-letsencrypt-for-your-ircd.html)
 - [Wikipedia - motd (Unix)](https://en.wikipedia.org/wiki/Motd_(Unix))
