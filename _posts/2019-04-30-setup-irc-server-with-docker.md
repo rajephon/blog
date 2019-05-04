@@ -14,7 +14,7 @@ Photo by [SpaceX](https://unsplash.com/photos/VBNb52J8Trk?utm_source=unsplash&ut
 
 오늘은 [Let's Encrypt](https://letsencrypt.org/)와 [Docker](https://www.docker.com/)를 활용해 빠르고 간단히 IRC 서버를 구축해봅시다. IRC는 공개된 명세가 있는 프로토콜이기에 다양한 클라이언트 소프트웨어가 있고, 서버 구현체 또한 [UnrealIRCd](https://www.unrealircd.org/), [Bahamut](https://github.com/DALnet/bahamut), [Inspircd](http://www.inspircd.org/) 등 다양하게 존재합니다.
 
-또한 IRC는 오래된 프로토콜이지만 오늘날 예전만큼 많이 사용되지 않아 dockerhub에 공식 컨테이너가 별로 없었습니다. 그런 와중에 다행히 [Inspircd](http://www.inspircd.org/)는 공식 컨테이너가 등록되어 있고, 최근 업데이트도 되고 있습니다. 오늘 실습에는 [Inspircd]를 이용해 서버를 구축해봅시다!
+또한 IRC는 오래된 프로토콜이지만 오늘날 예전만큼 많이 사용되지 않아 dockerhub에 공식 컨테이너가 별로 없었습니다. 그래도 다행히 [Inspircd](http://www.inspircd.org/)는 공식 컨테이너가 등록되어 있고, 최근 업데이트도 되고 있습니다. 오늘 실습에는 [Inspircd](http://www.inspircd.org/)를 이용해 서버를 구축해봅시다!
 
 ## Ready
 
