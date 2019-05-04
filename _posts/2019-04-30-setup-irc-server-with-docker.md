@@ -281,10 +281,10 @@ Docker 로고의 아스키 아트가 인상적입니다. 서버 사이드에서�
 - `motd`는 'message of the day(오늘의 메시지)'라는 뜻입니다.
 - TLS로만 서비스를 이용하도록 하고 싶을 경우, 방화벽에서 plain text를 이용하는 `6667`포트를 닫아도 무방합니다. 단, 접속을 할 때 꼭 TLS 옵션과 포트를 입력해야 합니다.
 
-## Reference
+## 참고
 
-- [🐙 Quick Start: Docker Compose](https://velog.io/@godori/-Docker-Compose-Quick-Guide)
 - [Docker hub - inspircd-docker](https://hub.docker.com/r/inspircd/inspircd-docker)
+- [🐙 Quick Start: Docker Compose](https://velog.io/@godori/-Docker-Compose-Quick-Guide)
 - [RFC 7194 - Default Port for Internet Relay Chat (IRC) via TLS/SSL](https://tools.ietf.org/html/rfc7194)
 - [suchsecurity.com - Using LetsEncrypt for your IRCd](https://suchsecurity.com/using-letsencrypt-for-your-ircd.html)
 - [Wikipedia - motd (Unix)](https://en.wikipedia.org/wiki/Motd_(Unix))
