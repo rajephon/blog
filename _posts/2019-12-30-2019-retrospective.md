@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 🏡 2019 회고
-date: 2019-12-30 13:52 +0900
+date: 2020-01-03 17:07 +0900
 categories: Blog
 tags: [회고록]
 comments: true
