@@ -10,7 +10,7 @@ pinned: true
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-04-gaviscon-meme-generator-postmortem/banner-image.jpg)
 
-사실 이 주제로 포스트를 작성할 계획은 전혀 없었습니다. 개비스콘 짤 생성기는 2017년 11월 처음으로 공개한 오래된 프로젝트입니다. 그런데 며칠 전 매우 많은 사람들이 [개비스콘 짤 생성기](https://rajephon.github.io/gvsc/)를 이용해주셔서 포스트 모템을 작성하면 좋을 것 같다는 생각이 들었습니다. 그래서 이번 주는 얼랭 시리즈의 다음 편이 아니라 `개비스콘 짤 생성기 포스트모템`으로 주제를 정했습니다.
+사실 이 주제로 포스트를 작성할 계획은 전혀 없었습니다. 개비스콘 짤 생성기는 2017년 11월 처음으로 공개한 오래된 프로젝트입니다. 그런데 며칠 전 매우 많은 사람들이 [개비스콘 짤 생성기](https://gvsc.rajephon.dev/)를 이용해주셔서 포스트 모템을 작성하면 좋을 것 같다는 생각이 들었습니다. 그래서 이번 주는 얼랭 시리즈의 다음 편이 아니라 `개비스콘 짤 생성기 포스트모템`으로 주제를 정했습니다.
 
 ## 탄생
 
@@ -130,7 +130,8 @@ PC 사용자가 모바일보다 많을 것이라 생각했는데, 모바일 이�
 
 ## 참고 링크
 
-- [개비스콘 짤 생성기](https://rajephon.github.io/gvsc/)
+- [개비스콘 짤 생성기](https://gvsc.rajephon.dev/)
 - [위키트리 - 커뮤니티서 재밌다고 난리 난 '개비스콘 짤 생성기'](https://t.co/wmooyilljz)
+- [[밈] 짤 유통 문화를 한 단계 업그레이드 시킨 '개비스콘 짤'](http://www.ohfun.net/?ac=article_view&entry_id=20429)
 
 [^1]: [야크 털 깍기(Yak Shaving)](https://www.lesstif.com/pages/viewpage.action?pageId=29590364)  
