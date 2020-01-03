@@ -39,7 +39,9 @@ owner:
   job: "S/W Engineer"
   bio: "게임과 영화를 좋아하는 개발자"
   email: rajephon@gmail.com
-  disqus-shortname: rajephon
+  utterances-reponame: "rajephon/blog-comments"
+  utterances-theme: github-light
+  disqus-shortname: # disqus-shortname
   twitter: #username
   facebook: #username
   google:
