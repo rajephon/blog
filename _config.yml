@@ -37,7 +37,7 @@ owner:
   name: rajephon
   avatar: profile.png
   job: "S/W Engineer"
-  bio: "게임과 영화를 좋아하는 개발자"
+  bio: "게임과 영화를 좋아하는 개발자<br /><a href=\"rajephon.dev\">rajephon.dev</a>"
   email: rajephon@gmail.com
   utterances-reponame: "rajephon/blog-comments"
   utterances-theme: github-light
