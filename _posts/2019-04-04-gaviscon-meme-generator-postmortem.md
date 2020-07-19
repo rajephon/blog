@@ -133,5 +133,6 @@ PC 사용자가 모바일보다 많을 것이라 생각했는데, 모바일 이�
 - [개비스콘 짤 생성기](https://gvsc.rajephon.dev/)
 - [위키트리 - 커뮤니티서 재밌다고 난리 난 '개비스콘 짤 생성기'](https://t.co/wmooyilljz)
 - [[밈] 짤 유통 문화를 한 단계 업그레이드 시킨 '개비스콘 짤'](http://www.ohfun.net/?ac=article_view&entry_id=20429)
+- [드립과 짤로도 창조가 가능하다? 새로운 생각의 재료 '밈'](https://post.naver.com/viewer/postView.nhn?memberNo=1256575&volumeNo=28635879)
 
 [^1]: [야크 털 깍기(Yak Shaving)](https://www.lesstif.com/pages/viewpage.action?pageId=29590364)  
