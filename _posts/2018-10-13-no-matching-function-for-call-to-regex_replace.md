@@ -4,7 +4,7 @@ date: 2018-10-13 05:32:54 +0900
 categories: Amazon AWS
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## 문제

@@ -5,7 +5,7 @@ categories: diary
 tags: [iphone, 해외직구]
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## Intro

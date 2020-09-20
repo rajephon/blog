@@ -5,7 +5,7 @@ date: 2019-03-27 11:05 +0900
 categories: Programming
 tags: [Erlang,Programming]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-03-27-erlang-02-pattern-matching/banner-image.jpg)

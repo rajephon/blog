@@ -4,7 +4,7 @@ date: 2018-01-30 23:39:09 +0900
 categories: android
 layout: post
 comments: true
-pinned: true
+
 ---
 # 1. 문제점
 C++로 작성된 정적 라이브러리 파일을 안드로이드 스튜디오에서 NDK를 이용하여 추가해 사용하려 했으나 다음과 같은 오류가 발생하였다.

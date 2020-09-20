@@ -5,7 +5,7 @@ date: 2019-04-30 21:47 +0900
 categories: Docker
 tags: [Docker,IRC]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-30-setup-irc-server-with-docker/banner-image.jpg)

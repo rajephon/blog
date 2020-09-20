@@ -5,7 +5,7 @@ categories: diary
 tags: [iphone, 해외직구]
 layout: post
 comments: true
-pinned: true
+
 ---
 
 > 이전 포스트 [아이폰 XS 직구하기 - 00](/blog{% post_url 2018-10-01-direct-buying-iphone-xs-00 %})와 이어지는 내용입니다.

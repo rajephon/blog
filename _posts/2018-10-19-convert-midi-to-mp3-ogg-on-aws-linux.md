@@ -5,7 +5,7 @@ categories: AWS
 tags: [timidity, lame, AWS]
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## Timidity++

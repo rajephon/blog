@@ -4,7 +4,7 @@ date: 2018-10-14 19:09:54 +0900
 categories: programmers
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## 문제

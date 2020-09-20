@@ -5,7 +5,7 @@ date: 2019-04-04 21:27 +0900
 categories: Programming
 tags: [Web,Programming,개비스콘]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-04-gaviscon-meme-generator-postmortem/banner-image.jpg)

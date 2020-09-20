@@ -4,7 +4,7 @@ date: 2017-11-28 01:45:14 +0900
 categories: network
 layout: post
 comments: true
-pinned: true
+
 ---
 요즘 나오는 대부분의 공유기는 원격 부팅(WOL) 기능을 제공합니다.
 

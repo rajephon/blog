@@ -4,7 +4,7 @@ date: 2017-11-28 01:27:54 +0900
 categories: NodeJS
 layout: post
 comments: true
-pinned: true
+
 ---
 
 구글 계정을 이용한  로그인 구현은 예전에 비하여 정말 손쉬워졌다.

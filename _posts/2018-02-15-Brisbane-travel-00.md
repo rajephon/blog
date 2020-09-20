@@ -4,7 +4,7 @@ date: 2018-02-15 12:36:47 +0900
 categories: diary travel
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## 00. 준비

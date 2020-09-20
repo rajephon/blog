@@ -5,7 +5,7 @@ date: 2019-04-14 17:29 +0900
 categories: Programming
 tags: [Erlang,Programming]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-14-erlang-03-lists/banner-image.jpg)

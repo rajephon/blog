@@ -4,7 +4,7 @@ date: 2018-10-28 17:42:30 +0900
 categories: Unity
 tags: Unity StandardAssets VolumetricFog VolumetricLighting
 comments: true
-pinned: true
+
 ---
 ![VolumetricLighting]({{ site.url }}/assets/images/Unity-SunShafts/7.png) 
 ## Intro

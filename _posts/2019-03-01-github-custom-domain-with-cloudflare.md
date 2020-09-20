@@ -5,7 +5,7 @@ categories: Programming
 tags: [Github, Domain, Cloudflare]
 layout: post
 comments: true
-pinned: true
+
 ---
 ![banner-image]({{ site.url }}/assets/images/2019-03-01-github-custom-domain-with-cloudflare/banner-image.png)
 

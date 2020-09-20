@@ -4,7 +4,7 @@ date: 2018-05-20 18:21:16 +0900
 categories: NodeJS
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## 00. 준비

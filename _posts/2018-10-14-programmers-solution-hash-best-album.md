@@ -5,7 +5,7 @@ categories: programmers 고득점Kit
 tags: programmers
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## 문제

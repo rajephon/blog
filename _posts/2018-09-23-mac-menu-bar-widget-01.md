@@ -5,7 +5,7 @@ categories: Swift
 tags: [macOS, popover, swift]
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## Intro

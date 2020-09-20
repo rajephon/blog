@@ -5,7 +5,7 @@ date: 2019-07-12 19:01 +0900
 categories: [Docker, RaspberryPi, Server]
 tags: [RaspberryPi, Docker, Ubuntu]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-07-12-setup-raspberrypi-home-server/banner-image.jpg)

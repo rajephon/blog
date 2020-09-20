@@ -5,7 +5,7 @@ categories: Blog
 tags: [2018, 회고록]
 layout: post
 comments: true
-pinned: true
+
 ---
 <img src="{{ site.url }}/assets/images/2018_remembrance/2019.jpg" alt="prog2019_goalsrammers">  
 _이미지 출처: [flickr.com/@Marco Verch](https://www.flickr.com/photos/30478819@N08/31327168808/in/photostream/)_  

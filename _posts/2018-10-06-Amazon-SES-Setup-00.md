@@ -5,7 +5,7 @@ categories: amazon SES
 tags: [AWS, SES, NodeJS]
 layout: post
 comments: true
-pinned: true
+
 ---
 
 ## Intro

@@ -5,7 +5,7 @@ date: 2019-04-25 14:38 +0900
 categories: Programming
 tags: [Erlang,Programming]
 comments: true
-pinned: true
+
 ---
 
 ![banner-image]({{ site.url }}/assets/images/2019-04-25-erlang-05-rebar3-project-setup/banner-image.jpg)
