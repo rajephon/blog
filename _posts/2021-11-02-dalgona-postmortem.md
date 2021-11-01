@@ -15,7 +15,7 @@ comments: true
 
 이를 위해 두 가지 확인이 필요했다. 하나는 캔버스에서 이미지 마스킹 기능 사용 가능 여부, 또 하나는 사진에서 윤곽선만 뽑아올 방법이다. 달고나 이미지를 배경에 깔고, 달고나 부분으로 마스킹된 영역에 윤곽선을 딴 이미지를 올려주는 방식으로 구현할 수 있지 않을까 싶다.
 
-### 마스킹
+### 🎭 마스킹
 
 사용자가 올린 이미지를 달고나 영역에만 표시하기 위해서는 마스킹 기능을 사용할 수 있어야 한다. 구글링 결과 [스택 오버플로우에 올라온 방법](https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping)은 생각보다 간단했다.
 
@@ -49,7 +49,7 @@ ctx.drawImage(img, 0, 0);
 
 1차 고민은 해결!
 
-### 윤곽선
+### 👤 윤곽선
 
 다음으로 이미지에서 윤곽선을 뽑아야 한다. 윤곽선 검출은 [canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector)를 자바스크립트로 구현한 [라이브러리](https://github.com/petarjs/js-canny-edge-detector)를 발견했으나, 원하는 처리속 도가 나오지 않았다.
 Loading spinner라도 달아야하나 싶었는데, [opencv-js](https://github.com/TechStark/opencv-js)를 발견했고 처리가 훨씬 빨랐다! yeah!
@@ -64,7 +64,7 @@ Loading spinner라도 달아야하나 싶었는데, [opencv-js](https://github.c
 그리고 위치를 조절할 수 있도록 드래그 기능, 크기 조절, 등을 넣어주고 png 파일로 출력할 수 있는 다운로드 버튼을 추가한다.
 
 
-### 다운로드 버튼
+### 📲 다운로드 버튼
 
 ```typescript
 const downloadImage = () => {
@@ -92,7 +92,7 @@ const downloadImage = () => {
 
 사용자가 바로 다운로드할 수 있도록 `download` 속성을 가진 a 태그를 만들어보기도 하고, DataURL로 바로 페이지를 이동시켜보기도 했는데, 브라우저 호환 문제가 발생하거나 하는 등 생각보다 만족스러운 동작을 보여주질 않았다. 이에 타협안으로 img 태그를 이용해 화면 하단에 출력하도록 했다.
 
-### 퍼블리싱
+### 💼 퍼블리싱
 
 ![google-domain]({{ site.url }}/assets/images/2021-10-26-dalgona-postmortem/google-domain.png)
 
@@ -113,7 +113,7 @@ CNAME 파일을 생성하고 도메인 주소를 등록하는 것도 잊지 말�
 
 그래도 나름 재미있게 만들어져 만족스럽다. 😝
 
-## 레퍼런스
+## 📚 레퍼런스
 
 - [Dalgona meme generator](https://dalgona.games/)
 - [Canvas image masking / overlapping - stackoverflow](https://stackoverflow.com/questions/18379818/canvas-image-masking-overlapping)
