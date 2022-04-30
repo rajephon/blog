@@ -1,5 +1,5 @@
 ---
-title: "아마존 SES 세팅부터 Node.js 활용 메일 전송까지 (22.04.30 업데이트)"
+title: "아마존 SES 세팅부터, 개인 도메인 메일 송수신, Node.js 활용 메일 전송까지 (22.04.30 업데이트)"
 date: 2018-10-06 17:59:25 +0900
 categories: amazon SES
 tags: [AWS, SES, NodeJS]
